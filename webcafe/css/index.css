@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* usefulArea 영역 시작 */
+#usefulArea {
+    width: 250px;
+    margin-right: 30px;
+    /*float: left;*/
+}
+/* 로그인 영영 시작 */
+.login {
+    background-image: radial-gradient(circle at top right, #ffc848, #ff8208);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.login > h2 {
+    color: #feff9a;
+    font-size: 1.2em;
+    padding: 0 0 10px 10px;
+}
+.login label {
+    display: inline-block;
+    width: 48px;
+}
+.login input {
+    width: 93px;
+    height: 18px;
+    padding: 1px 1px 1px 4px;
+    border: 1px solid #ccc;
+}
+#userId {
+    margin-bottom: 6px;
+}
+.login form {
+    position: relative;
+    background-color: #fff;
+    border-radius: 3px 3px 0 0;
+    padding: 10px 10px 0 10px;
+}
+.login button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 1px solid #ff4e00;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, #fe5f18 0%, #fa4306 100%);
+}
+.login fieldset {
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 10px 0;
+}
+.memberLink {
+    background-color: white;
+    border-radius: 0 0 3px 3px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.memberLink a::before {
+    font-family: "webcafeIcon";
+    content: "g";  /* 아이디 회원가입 앞 > 모양 표시 */
+    color: #fa3d00;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+.join {
+    float: left;
+    padding: 10px 0;
+}
+.find {
+    float: right;
+    padding: 10px 0;
+}
+/* 로그인 영영 종료 */
+
+/* 유효성 검사 링크 영역 시작 */
+.validation {
+    margin-top: 20px;
+}
+.validation li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #fff 0%, #ebebeb 100%);
+}
+.validation a {
+    display: block;
+    height: 30px;
+    color: #9c9c9c;
+    font-weight: bold;
+    line-height: 30px;
+    background: url(images/validation_icon.png) no-repeat 20px 5px;  /*이미지  반복여부  포지션 */
+    background-size: 20px 20px;
+    text-indent: 45px;
+}
+/* 유효성 검사 링크 영역 종료 */
+
+/* 웹 관련 용어 영역 시작 */
+.term {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px 20px;
+    background-image: linear-gradient(to bottom, #fff 0%, #f4f4f4 100%);
+}
+.term h2 {
+    font-size: 1.2em;
+}
+.term dl {
+    margin-top: 15px;
+    overflow: hidden;
+}
+.term dt {
+    color: #296897;
+    float: right;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 130px;
+}
+.term dd:nth-of-type(1) {
+    float: left;
+}
+.term dd:nth-of-type(2) {
+    float: right;
+    width: 130px;
+    line-height: 1.45;
+    text-align: justify;
+}
+/* 웹 관련 용어 영역 종료 */
+
+/* usefulArea 영역 종료 */
+
+/* infoArea 영역 시작 */    
+#infoArea {
+    width: 390px;
+    margin-right: 30px;
+    /*float: left;*/
+}
+/* infoArea 영역 종료 */
+
+/* linkArea 영역 시작 */
+#linkArea {
+    width: 200px;
+    margin-right: 30px;
+    /*float: left;*/
+}
+/* linkArea 영역 종료 */
