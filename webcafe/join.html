@@ -120,8 +120,8 @@
                             <input type="password" id="confirmPassword" name="confirmPassword" required>
                         </p>
                         <p>
-                            <label for="address" class="lableAddress">주소</label>
-                            <a href="find_zipcode.html" class="findZipcode">우펴번호 찾기</a>
+                            <label for="address" class="labelAddress">주소</label>
+                            <a href="find_zipcode.html" class="findZipcode">우편번호 찾기</a>
                             <input type="tel" id="zipcode" name="zipcode" maxlength="5" size="6" title="우편번호">
                             <input type="text" id="address" name="address" maxlength="100" size="60" placeholder="입력 예) 서울시 종로구 관철동 11번지">
                         </p>
@@ -129,11 +129,41 @@
                             <label for="tel">연락처</label>
                             <input type="tel" id="tel" name="tel" maxlength="11" size="20" title="하이픈(-)은 입력할 수 없습니다." placeholder="입력 예) 01012347890">
                         </p>
+                        <p>
+                            <label for="email">이메일<strong class="require">필수</strong></label>
+                            <input type="email" id="email" name="email" size="30" required placeholder="입력 예) ezen@gmail.com">
+                        </p>
+                        <p class="mailing">
+                            <em>메일링 리스트 가입</em>
+                            <span>메일링리스트에 가입하시면 WebCafe의 뉴스레더를 받아보실 수 있습니다.</span>
+                            <input type="radio" id="mailingOK" name="mailing" value="Yes" checked><label for="mailingOK"> 예</label>
+                            <input type="radio" id="mailingNo" name="mailing" value="No" ><label for="mailingNo"> 아니오</label> <!--name은 같아야함-->
+                        </p>
+                        <div class="btnJoinArea">
+                            <button type="submit" class="btnOk">회원가입</button>
+                            <button type="reset" class="btnCancle">취소</button>
+                        </div>
                     </fieldset>
                 </form>
             </section>
             <!-- 회원가입 영역 종료 -->
+
             <!-- 트위터 영역 시작 -->
+            <aside id="twitterArea" title="HTML5관련 글">
+                <h2>twitter</h2>
+                <article class="twitterArticle">
+                    <img src="images/seulbinim.jpg" alt="seulbinim">
+                    <a href="http://twitter.com/sulbinim" class="twitterUserName" title="seulbinim의 트위터로 연결됩니다.">seulbinim</a>
+                    <p>한국 정보화 진흥원에서<mark>HTML5</mark>교육을 무료로 해준답니다.<mark>HTML5</mark>에 관심이 있는 분들은 한국 정보화 진흥원으로 문의하시기 바랍니다.</p>
+                    <time datetime="2021-09-03" class="twitterDate">2021년 09월 03일</time>
+                </article>
+                <article class="twitterArticle">
+                    <img src="images/miheeya.jpg" alt="miheeya">
+                    <a href="http://twitter.com/miheeya" class="twitterUserName" title="miheeya의 트위터로 연결됩니다.">miheeya</a>
+                    <p><mark>HTML5</mark>도 XHTML1.0이나 HTML4.01과 같은 마크업언어입니다. <mark>HTML5</mark>를 사용한다고해서 웹표준을 준수하지 않는다거나 웹접근성이 떨어지는 겻은 아닙니다.</p>
+                    <time datetime="2021-09-03" class="twitterDate">2021년 09월 03일</time>
+                </article>
+            </aside>
             <!-- 트위터 영역 종료 -->
         </div>
         <!-- 메인 콘텐츠 영역 종료 -->
