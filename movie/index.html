@@ -5,128 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>movie</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <!-- #wrapper 시작 -->
     <div id="wrapper">
         <!-- 헤더 영역 시작 -->
         <header>
-            <h1 class="logo">
+            <h1 class="logo"><p>CULTUREPLEX</p>
                 <a href="index.html">
                     <img src="images/logoRed.png" alt="영화관 로고">
                 </a>
             </h1>
             <ul class="infoLink">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">MY CGV</a></li>
-                <li><a href="#">고객센터</a></li>
+                <li><a href="#"><img id="infoimg1" src="images/loginPassword.png" alt="로그인 이미지">로그인</a></li>
+                <li><a href="#"><img id="infoimg2" src="images/loginJoin.png" alt="회원가입 이미지">회원가입</a></li>
+                <li><a href="#"><img id="infoimg3" src="images/loginMember.png" alt="내정보 이미지">MY CGV</a></li>
+                <li><a href="#"><img id="infoimg4" src="images/loginCustomer.png" alt="고객센터 이미지"> 고객센터</a></li>
             </ul>
-            <nav>
-                <h2 class="hidden">메인메뉴</h2>
-                <ul class="mainmenu">
-                    <li><a href="#">영화</a>
-                        <ul class="movie">
-                            <li><a href="#">박스오피스</a></li>
-                            <li><a href="#">최신개봉작</a></li>
-                            <li><a href="#">상영예정작</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">예매</a>
-                        <ul class="ticketing">
-                            <li><a href="#">예매하기</a></li>
-                            <li><a href="#">상영시간표</a></li>
-                            <li><a href="#">할인안내</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">이벤트</a>
-                        <ul class="event">
-                            <li><a href="#">시사회/무대인사</a></li>
-                            <li><a href="#">제휴할인</a></li>
-                            <li><a href="#">당첨자 발표</a></li>
-                            <li><a href="#">종료된 이벤트</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">스토어</a>
-                        <ul class="store">
-                            <li><a href="#">베스트</a></li>
-                            <li><a href="#">관람권</a></li>
-                            <li><a href="#">스낵음료</a></li>
-                            <li><a href="#">포토카드</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <button>간편예매</button>
         </header>
         <!-- 헤더 영역 종료 -->
 
+        <!-- 메뉴 영역 시작 -->
+        <nav>
+            <h2 class="hidden">메인메뉴</h2>
+            <ul class="mainmenu">
+                <li><a href="#">영화</a>
+                    <ul id="movie" class="sub">
+                        <li><a href="#">박스오피스</a></li>
+                        <li><a href="#">최신개봉작</a></li>
+                        <li><a href="#">상영예정작</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예매</a>
+                    <ul id="ticketing" class="sub">
+                        <li><a href="#">예매하기</a></li>
+                        <li><a href="#">상영시간표</a></li>
+                        <li><a href="#">할인안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트</a>
+                    <ul id="event" class="sub">
+                        <li><a href="#">시사회/무대인사</a></li>
+                        <li><a href="#">제휴할인</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                        <li><a href="#">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">스토어</a>
+                    <ul id="store" class="sub">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">관람권</a></li>
+                        <li><a href="#">스낵음료</a></li>
+                        <li><a href="#">포토카드</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">혜택</a>
+                    <ul id="benefit" class="sub">
+                        <li><a href="#">할인정보</a></li>
+                        <li><a href="#">CLUB 라운지</a></li>
+                        <li><a href="#">VIP 라운지</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="reserve">간편예매</button>
+        </nav>
+        <!-- 메뉴 영역 종료 -->
+
         <!--비주얼 영역 시작 -->
         <div id="visual">
-
+            <img src="images/mianposter.jpg" alt="메인포스터">
         </div>
         <!-- 비주얼 영역 종료 -->
 
         <!-- 메인 콘텐츠 영역 시작 -->
-        <div id="maincontent">
+        <div class="maincontent chart">
             <!-- 무비차트, 이벤트, 영화 관람권 영역 시작 -->
             <!-- 무비차트,상영예정작 영역 시작 -->
             <div id="board">
                 <section id="movieChart">
-                    <h2><a href="movieChart">무비차트</a></h2>
+                    <h2><a href="#movieChart">무비차트</a></h2>
                     <ul>
                         <li>
                             <img src="images/movieChart1.jpg" alt="영화포스터1">
-                            <p>마녀(魔女) Part2. The Other One<br>예매율 11.9% | ★8.8</p>
+                            <p class="name">마녀(魔女) Part2. The Other One</p>
+                            <p class="percent">예매율 11.9% <span class="star">★</span> 8.8</p>
                         </li>
                         <li>
                             <img src="images/movieChart2.jpg" alt="영화포스터2">
-                            <p>탑건:메버릭<br>예매율 50.0% | ★9.8</p>
+                            <p class="name">탑건:메버릭</p>
+                            <p class="percent">예매율 50.0% <span class="star">★</span> 9.8</p>
                         </li>
                         <li>
                             <img src="images/movieChart3.jpg" alt="영화포스터3">
-                            <p>범죄도시2<br>예매율 11.0% | ★9.7</p>
+                            <p class="name">범죄도시2</p>
+                            <p class="percent">예매율 11.0% <span class="star">★</span> 9.7</p>
                         </li>
                         <li>
                             <img src="images/movieChart4.jpg" alt="영화포스터4">
-                            <p>토르-러브 앤 썬더<br>예매율 14.0% | ★9.7</p>
+                            <p class="name">토르-러브 앤 썬더</p>
+                            <p class="percent">예매율 14.0% <span class="star">★</span> 9.7</p>
                         </li>
                         <li>
                             <img src="images/movieChart5.jpg" alt="영화포스터5">
-                            <p>브로커<br>예매율 10.5% | ★8.6</p>
+                            <p class="name">브로커</p>
+                            <p class="percent">예매율 10.5% <span class="star">★</span> 8.6</p>
                         </li>
                     </ul>
                     <a href="#" class="more" title="영화 더보기">전체보기</a>
                 </section>
                 <section id="scheduleMovie">
-                    <h2><a href="scheduleMovie">상영예정작</a></h2>
+                    <h2><a href="#scheduleMovie">상영예정작</a></h2>
                     <ul>
                         <li>
                             <img src="images/scheduleMovie1.jpg" alt="영화포스터1">
-                            <p>헤어질 결심<br>예매율 11.9% | D-4</p>
+                            <p class="name">헤어질 결심</p>
+                            <p class="percent">예매율 11.9% <span class="day">D-4</span></p>
                         </li>
                         <li>
                             <img src="images/scheduleMovie2.jpg" alt="영화포스터2">
-                            <p>미친 능력<br>예매율 50.0% | D-6</p>
+                            <p class="name">미친 능력</p>
+                            <p class="percent">예매율 50.0% <span class="day">D-6</span></p>
                         </li>
                         <li>
                             <img src="images/scheduleMovie3.jpg" alt="영화포스터3">
-                            <p>고스트랜드<br>예매율 11.0% | D-5</p>
+                            <p class="name">고스트랜드</p>
+                            <p class="percent">예매율 11.0% <span class="day">D-5</span></p>
                         </li>
                         <li>
                             <img src="images/scheduleMovie4.jpg" alt="영화포스터4">
-                            <p>미니언즈2<br>예매율 14.0% | D-7</p>
+                            <p class="name">미니언즈2</p>
+                            <p class="percent">예매율 14.0% <span class="day">D-7</span></p>
                         </li>
                         <li>
                             <img src="images/scheduleMovie5.jpg" alt="영화포스터5">
-                            <p>아바타:물의 길<br>예매율 10.5% | D-27</p>
+                            <p class="name">아바타:물의 길</p>
+                            <p class="percent">예매율 10.5% <span class="day">D-27</span></p>
                         </li>
                     </ul>
                     <a href="#" class="more" title="상영예정작 더보기">전체보기</a>
                 </section>
             </div>
-            <!-- 무비차트,상영예정작 영역 종료 -->
-            <!-- 이벤트 영역 시작 -->
+        </div>
+        <!-- 무비차트,상영예정작 영역 종료 -->
+        <!-- 이벤트 영역 시작 -->
+        <div class="maincontent">
             <section id="event">
                 <h2>EVENT</h2>
                 <div>
@@ -231,15 +255,15 @@
                 </ul>
             </section>
             <address>
-                <div>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br>
-                    대표이사 : 허민회 ·사업자등록번호 : 104-81-45690 ·통신판매업신고번호 : 2017-서울용산-0622 사업자정보확인<br>
-                    호스팅사업자 : CJ올리브네트웍스 ·개인정보보호 책임자 : 심준범 ·대표이메일 : 123456@cj.net
-                </div>
+                    <span>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</span>
+                    <span>대표이사 : 허민회 ·사업자등록번호 : 104-81-45690 ·통신판매업신고번호 : 2017-서울용산-0622 사업자정보확인</span>
+                    <span>호스팅사업자 : CJ올리브네트웍스 ·개인정보보호 책임자 : 심준범 ·대표이메일 : 123456@cj.net</span>
             </address>
             <p class="copyright">&copy; CJ CGV. All Right Reserved</p>
         </footer>
         <!-- 푸터 영역 종료 -->
     </div>
     <!-- #wrapper 종료 -->
+    <a id="TOP" href="#">TOP</a>
 </body>
 </html>

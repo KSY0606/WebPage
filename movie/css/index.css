@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* visual 영역 시작 */
+#visual {
+    width: 100%;
+    height: 475px;
+}
+#visual > img {
+    max-width: 100%;    /* width 100% 하면 화질 다 깨짐 ?????*/
+    max-height: 100%;
+}
+/* 메인 콘텐츠 영역 시작 */
+/* 무비차트,상영예정작 영역 시작 */
+.maincontent {
+    width: 1500px;
+}
+.chart {
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 460px;
+    padding-top: 60px;
+}
+#board {
+    position: relative;
+    width: 1024px;
+    height: 330px;
+    margin: 0 auto;
+}
+#board section {
+    position: relative;
+}
+#board section:target {
+    z-index: 10;
+}
+#board h2 {
+   float: left;
+   font-size: 1.3em;
+}
+#board h2 a {
+    display: inline-block;
+    color: #777676;
+    padding: 5px;
+}
+#board section:target h2 a {
+    color: black;
+}
+#scheduleMovie > h2::before {
+    content: "|";
+    color: #706d6d;
+    font-size: 0.8em;
+
+}
+#board ul {
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 960px;
+    background-color: #F6F6F6;
+}
+#board ul > li {
+    display: inline-block;
+    margin-right: 35px;
+}
+#board ul > li > img {
+    width: 150px;
+    border: 1px solid #F6F6F6;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #8C8C8C;
+}
+#board ul > li > p {
+    margin-top: 3px;
+}
+#board ul > li > .name {
+    width: 150px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
+#board ul > li > .percent {
+    width: 150px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.9em;
+}
+#board ul > li .star {
+    color: #DEB84F;
+}
+#board ul > li .star::before, #board ul > li .day::before {
+    content: "|";
+    color: #ABABAB;
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+#board .more {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    padding: 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border: 2px solid #B0B0B0;
+    border-radius: 10px;
+    height: 10px;
+    line-height: 10px;
+}
