@@ -8,13 +8,14 @@
     max-width: 100%;    /* width 100% 하면 화질 다 깨짐 ?????*/
     max-height: 100%;
 }
+
 /* 메인 콘텐츠 영역 시작 */
 /* 무비차트,상영예정작 영역 시작 */
 .maincontent {
-    width: 1500px;
+    
 }
 .chart {
-    background-color: #F6F6F6;
+    background-color: #FCFCFC;
     width: 100%;
     height: 460px;
     padding-top: 60px;
@@ -47,7 +48,6 @@
     content: "|";
     color: #706d6d;
     font-size: 0.8em;
-
 }
 #board ul {
     text-align: center;
@@ -55,7 +55,7 @@
     top: 40px;
     left: 50px;
     width: 960px;
-    background-color: #F6F6F6;
+    background-color: #FCFCFC;
 }
 #board ul > li {
     display: inline-block;
@@ -99,11 +99,109 @@
     position: absolute;
     top: 0;
     right: 50px;
-    padding: 8px;
-    font-size: 0.8em;
+    padding: 6px 8px;
+    font-size: 0.7em;
     font-weight: bold;
     border: 2px solid #B0B0B0;
     border-radius: 10px;
     height: 10px;
     line-height: 10px;
+}
+
+/* 이벤트 영역 시작 */
+#events {
+    height: 330px;
+    margin-top: 60px;
+    position: relative;
+}
+#events h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+#events div {
+    display: inline-block;
+    margin-left: 25px;
+}
+#events img {
+    width: 300px;
+    border: 1px solid #F6F6F6;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #8C8C8C;
+    margin-bottom: 15px;
+}
+#events .name {
+    width:  300px;
+    font-size: 1em;
+    font-weight: bold;
+    text-indent: 0.3em;
+    margin-bottom: 5px;
+}
+#events .time {
+    width:  300px;
+    font-size: 1em;
+    text-indent: 0.3em;
+    color: #817e7e;
+}
+#events .more {
+    position: absolute;
+    top: 0;
+    right: 33px;
+    padding: 6px 8px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border: 2px solid #B0B0B0;
+    border-radius: 10px;
+    height: 10px;
+    line-height: 10px;
+}
+
+/* 티켓 판매 영역 시작 */
+#ticket {
+    height: 350px;
+    margin-top: 60px;
+}
+#ticket h3 {
+    display: inline-block;
+    font-size: 1.3em;
+    color: #4B4B4B;
+    padding: 7px 0 0 7px;
+}
+.movieTicket, .giftCard, .combo {
+    display: inline-block;
+    position: relative;
+    border: 2px solid #CACACA;
+    border-radius: 10px;
+    width: 290px;
+    height: 350px;
+    padding: 9px;
+    margin: 0 12px;
+}
+#ticket .tickets {
+    display: inline-block;
+    width: 270px;
+}
+.movieTicket img, .giftCard img, .combo img {
+    width: 100px;
+}
+.movieTicket p, .giftCard p, .combo p {
+    display: inline-block;
+    width: 140px;
+    position: relative;
+    top: -30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 10px;
+}
+#ticket a:hover {
+    text-decoration: none;
+}
+#ticket .more {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #4B4B4B;
+    font-size: 0.8em;
+    border: 1px solid #DCDCDC;
+    border-radius: 15px;
+    padding: 2px 5px;
 }

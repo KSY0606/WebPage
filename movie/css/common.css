@@ -136,7 +136,7 @@ nav {
     white-space: nowrap; /* 줄바꿈만 안하게해줌 */
 }
 .mainmenu > li:hover ul {
-    background-color: greenyellow;   /* 흰색으로 바꿀것 */
+    background-color: rgba(255, 255, 255, 0.7);
     margin-top: 3px;
 }
 .mainmenu > li:hover ul > li {
@@ -159,14 +159,16 @@ nav {
 /* 슬로건 영역 시작 */
 #slogan {
     width: 100%;
+    margin-top: 60px;
 }
 #slogan > #sloganimg > img {
     width: 100%;
-    height: 260px;
+    height: 220px;
 }
 /* 푸터 영역 시작 */
 #footer {
     padding: 15px;
+    margin-top: 20px;
 }
 .guide > ul {
     padding: 0 0 15px 0;
