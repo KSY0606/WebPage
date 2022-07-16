@@ -15,7 +15,7 @@ ul {
 /* 링크 스타일 */
 a:link { /* 사이트 방문 전 */
     text-decoration: none;
-    color: #FFA7A7;
+    color: #D9418C;
 }
 a:visited { /* 사이트 방문 후 */
     text-decoration: none;
@@ -45,7 +45,6 @@ header, .maincontent, #slogan, #footer, #visual{
 header {
     height: 140px;
     position: relative;
-    background-color: white;
     padding: 20px;
 }
 .logo {
@@ -67,7 +66,9 @@ header {
 }
 .infoLink {
     text-align: right;
-    position: relative;
+    position: absolute;
+    right: 25px;
+    width: 400px;
     height: 100px;
     padding-right: 20px;
 }
@@ -101,9 +102,13 @@ header {
     right: 45px;
 }
 nav {
+    position: relative;
     height: 45px;
     border-top: 3px solid #FF7E7E;
     border-bottom: 3px solid #FF7E7E;
+}
+.mainmenu {
+    width: 1024px;   /*지워도 될수도? */
 }
 .mainmenu > li {
     display: inline-block;
@@ -143,18 +148,18 @@ nav {
     display: inline-block;
     padding: 3px 15px;
 }
-.reserve {
-    padding: 10px;
+nav .reserve {
+    padding: 8px 17px;
     position: absolute;
     right: 300px;
-    top: 146px;
+    top: 3px;
     border: 1px solid #FF4848;
     background-color: #FF2424;
     color: white;
     font-weight: bold;
     font-size: 0.9em;
-    border-radius: 3px;
-    padding: 8px 17px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 /* 슬로건 영역 시작 */
 #slogan {
