@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* 로그인창 영역 시작 */
+#loginArea {
+    width: 1000px;
+    margin-top: 60px;
+    position: relative;
+}
+#loginArea > .login {
+    width: 600px;
+    padding: 20px;
+    display: inline-block;
+}
+#loginArea > .login > h2 {
+    color: #4B4B4B;
+    font-size: 1.3em;
+    padding: 0 0 10px 5px;
+    border-bottom: 2px solid #a8a5a5;
+}
+#loginArea #loginForm {
+    width: 600px;
+}
+#loginForm > div {
+    color: #797878;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+.login label {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+.login input {
+    width: 190px;
+    height: 20px;
+    padding: 2px 2px 2px 5px;
+    border: 1px solid #7d7c7c;
+}
+#userId {
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+.login form {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+.login fieldset {
+    height: 120px;
+    margin: 10px 0 0 0;
+    border: none;
+}
+.login #sign_in {
+    width: 265px;
+    height: 39px;
+    margin: 15px 0 0 15px;
+    background-color: #f36262;
+    border: 5px double white;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.memberLink {
+    text-align: center;
+    padding: 3px 0 15px 38px;
+    border-bottom: 2px solid #a8a5a5;
+    margin-bottom: 10px;
+}
+.memberLink > .join {
+    color: #797878;
+    padding-right: 12px;
+    font-size: 0.8em;
+}
+.memberLink > .find {
+    color: #797878;
+    padding-left: 12px;
+    font-size: 0.8em;
+}
+.memberLink span {
+    font-weight: bold;
+    color: black;
+    padding: 0 0 0 3px;
+}
+
+/* 영화 예매율 순위 영역 시작 */
+.maincontent .ranking {
+    width: 150px;
+    height: 200px;
+    float: right;
+    position: relative;
+    top: 53px;
+    right: 30px;
+    padding: 15px;
+    border: 2px solid #f8c6c6;
+    box-shadow: 1px 1px 2px rgb(220, 200, 200);
+    border-radius: 3px;
+}
+.ranking > h2 {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #f65b19;
+}
+.ranking ul {
+    width: 150px;
+    height: 150px;
+    margin-top: 35px;
+    padding-left: 10px;
+}
+.ranking ul > li {
+    margin-bottom: 10px;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ranking ul > li > a {
+    font-size: 0.9em;
+    color: #373434;
+}
+.ranking ul > li em {
+    margin-right: 13px;
+    color: red;
+    font-weight: bold;
+}
+.ranking .more {
+    color: #717171;
+    font-size: 0.8em;
+    position: absolute;
+    right: 8px;
+    top: 40px;   
+}
+.ranking span {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.login #member {
+    text-align: center;
+}
+.login .non_member {
+    width: 230px;
+    height: 39px;
+    margin: 10px 10px 0 10px;
+    background-color: #9a9999;
+    border: 2px solid #8b8a8a;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}

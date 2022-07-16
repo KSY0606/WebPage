@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie 로그인</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- #wrapper 시작 -->
+    <div id="wrapper">
+        <!-- 헤더 영역 시작 -->
+        <header>
+            <h1 class="logo"><p>CULTUREPLEX</p>
+                <a href="index.html">
+                    <img src="images/logoRed.png" alt="영화관 로고">
+                </a>
+            </h1>
+            <ul class="infoLink">
+                <li><a href="login.html"><img id="infoimg1" src="images/loginPassword.png" alt="로그인 이미지">로그인</a></li>
+                <li><a href="signUp.html"><img id="infoimg2" src="images/loginJoin.png" alt="회원가입 이미지">회원가입</a></li>
+                <li><a href="#"><img id="infoimg3" src="images/loginMember.png" alt="내정보 이미지">MY CGV</a></li>
+                <li><a href="#"><img id="infoimg4" src="images/loginCustomer.png" alt="고객센터 이미지"> 고객센터</a></li>
+            </ul>
+        </header>
+        <!-- 헤더 영역 종료 -->
+
+        <!-- 메뉴 영역 시작 -->
+        <nav>
+            <h2 class="hidden">메인메뉴</h2>
+            <ul class="mainmenu">
+                <li><a href="#">영화</a>
+                    <ul id="movie" class="sub">
+                        <li><a href="#">박스오피스</a></li>
+                        <li><a href="#">최신개봉작</a></li>
+                        <li><a href="#">상영예정작</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예매</a>
+                    <ul id="ticketing" class="sub">
+                        <li><a href="#">예매하기</a></li>
+                        <li><a href="#">상영시간표</a></li>
+                        <li><a href="#">할인안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트</a>
+                    <ul id="event" class="sub">
+                        <li><a href="#">시사회/무대인사</a></li>
+                        <li><a href="#">제휴할인</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                        <li><a href="#">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">스토어</a>
+                    <ul id="store" class="sub">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">관람권</a></li>
+                        <li><a href="#">스낵음료</a></li>
+                        <li><a href="#">포토카드</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">혜택</a>
+                    <ul id="benefit" class="sub">
+                        <li><a href="#">할인정보</a></li>
+                        <li><a href="#">CLUB 라운지</a></li>
+                        <li><a href="#">VIP 라운지</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="reserve">간편예매</button>
+        </nav>
+        <!-- 메뉴 영역 종료 -->
+
+        <!-- 메인 콘텐츠 영역 시작 -->
+        <div class="maincontent">
+            <!-- 로그인창 영역 시작 -->
+            <div id="loginArea">
+                <section class="login">
+                    <h2>로그인</h2>
+                    <form action="login.jsp" method="post" id="loginForm">
+                        <div>아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.</div>
+                        <fieldset>
+                            <legend class="hidden">회원 로그인 폼</legend>
+                            <p>
+                                <label for="userId">아이디</label>
+                                <input type="text" id="userId" name="userId" placeholder="Guest" required>
+                            </p>
+                            <p>
+                                <label for="userPw">비밀번호</label>
+                                <input type="password" id="userPw" name="userPw" placeholder="4자이상 8자이하" required>
+                            </p>
+                            <button type="submit" id="sign_in">로그인</button>
+                        </fieldset>
+                    </form>
+                    <div class="memberLink">
+                        <a href="#" class="join">회원가입<span>＞</span></a>
+                        <a href="#" class="find">아이디/비밀번호 찾기<span>＞</span></a>
+                    </div>
+                    <div id="member">
+                        <button type="submit" class="non_member">비회원 예매</button>
+                        <button type="submit" class="non_member">비회원 예매 조회</button>
+                    </div>
+                </section>
+                <!-- 로그인창 영역 종료 -->
+                <!-- 영화 예매율 순위 영역 시작 -->
+                <section class="ranking">
+                    <h2>영화 예매율 순위</h2>
+                    <ul>
+                        <li class="rank1"><em>1</em><a href="#">탑건:메버릭</a></li>
+                        <li class="rank2"><em>2</em><a href="#">범죄도시2</a></li>
+                        <li class="rank3"><em>3</em><a href="#">토르-러브 앤 썬더</a></li>
+                        <li class="rank4"><em>4</em><a href="#">명탐정 코난 : 할로윈의 신부</a></li>
+                        <li class="rank5"><em>5</em><a href="#">헤어질 결심</a></li>
+                    </ul>
+                    <a href="#" class="more" title="영화 예매율 순위 더보기"><span>+</span>더보기</a>
+                </section>
+                <!-- 영화 예매율 순위 영역 종료 -->
+            </div>
+        </div>
+        <!-- 메인 콘텐츠 영역 종료 -->
+
+        <!-- 슬로건 영역 시작 -->
+        <section id="slogan">
+            <div id="sloganimg">
+                <img src="images/slogan.png" alt="CGV 우리카드 출시 이미지">
+            </div>
+        </section>
+        <!-- 슬로건 영역 종료 -->
+
+        <!-- 푸터 영역 시작 -->
+        <footer id="footer">
+            <section class="guide">
+                <h2 class="hidden">사이트 이용안내</h2>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">채용공고</a></li>
+                    <li><a href="#">광고/제휴/출점문의</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">편성기준</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">이메일주소무단수집거부</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사이버감사실</a></li>
+                </ul>
+            </section>
+            <address>
+                    <span>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</span>
+                    <span>대표이사 : 허민회 ·사업자등록번호 : 104-81-45690 ·통신판매업신고번호 : 2017-서울용산-0622 사업자정보확인</span>
+                    <span>호스팅사업자 : CJ올리브네트웍스 ·개인정보보호 책임자 : 심준범 ·대표이메일 : 123456@cj.net</span>
+            </address>
+            <p class="copyright">&copy; CJ CGV. All Right Reserved</p>
+        </footer>
+        <!-- 푸터 영역 종료 -->
+    </div>
+    <!-- #wrapper 종료 -->
+    <a id="TOP" href="#">TOP</a>
+</body>
+</html>
