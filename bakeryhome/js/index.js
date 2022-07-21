@@ -8,3 +8,13 @@ function info() {
 setTimeout(function () {
     info();
 }, 3000);
+
+$(function() {
+    $(".dropdown").hover(function() {
+       // $(this).find(".dropdown_content").stop().slideDown();
+       $(".dropdown_content").stop().slideDown();
+    }, function() {
+       // $(this).find(".dropdown_content").stop().slideUp();
+       $(".dropdown_content").slideUp();
+    });
+});

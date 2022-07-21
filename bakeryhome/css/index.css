@@ -45,6 +45,7 @@ nav li.dropdown > a {
 }
 nav li.dropdown:hover ul.dropdown_content {
     display: block;
+   /* height: 147px; */
 }
 nav li.dropdown > a:hover, nav li.dropdown:hover .dropbtn{
     background-color: #7b422e;
@@ -52,11 +53,14 @@ nav li.dropdown > a:hover, nav li.dropdown:hover .dropbtn{
 }
 nav ul.dropdown_content {
     display: none;
+   /* height: 0;
+    overflow: hidden; */
     width: 200px;
     position: absolute; /* 부모에 포지션이 없는데 absolute를 사용해주면 현재 위치에 절대적인 위치를 잡게됨*/
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 10;
+   /* transition: height 0.5s; */
 }
 nav ul.dropdown_content a {
     display: block;
