@@ -8,7 +8,7 @@
     position: relative;
 }
 #signupArea h2 {
-    color: #455acf;
+    color: #f19d5d;
     font-size: 1.5em;
     letter-spacing: 3px;   
 }
@@ -17,8 +17,8 @@
     display: inline-block;
     width: 400px;
     padding: 30px 50px;
-    border-left: 2px solid #acabab;
-    border-right: 2px solid #acabab;
+    border-left: 2px solid #d6d6d6;
+    border-right: 2px solid #d6d6d6;
 }
 #signupArea div {
     text-align: center;
@@ -35,6 +35,10 @@
     right: 70px;
     font-size: 0.8em;
     color: #615a5a;
+}
+#signupArea .idCheck:hover {
+    color: red;
+    text-decoration: none;
 }
 #signupArea label {
     display: block;
