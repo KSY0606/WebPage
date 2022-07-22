@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>movie 메인페이지</title>
+    <title>CGV</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/icon.ico">
 </head>
 <body>
     <!-- #wrapper 시작 -->
@@ -76,8 +79,49 @@
 
         <!--비주얼 영역 시작 -->
         <div id="visual">
-            <h2>현재 상영작</h2>
-            <img src="images/mainimg.jpg" alt="메인포스터">
+            <!-- 각 이미지별 설명글 -->
+                <div class="slider_text_panel">
+                    <div class="slider_text">
+                        <h2>현재 상영작</h2>
+                    </div>
+                    <div class="slider_text">
+                        <h2>현재 상영작</h2>
+                    </div>
+                    <div class="slider_text">
+                        <h2>현재 상영작</h2>
+                    </div>
+                    <div class="slider_text">
+                        <h2>상영 예정작</h2>
+                    </div>
+                    <div class="slider_text">
+                        <h2>상영 예정작</h2>
+                        <p>미니언즈2 Minions: The Rise of Gru</p>
+                    </div>
+                </div>
+            <div class="image_slider">
+                <!-- 슬라이더에 보이는 영화 포스터 -->
+                <div class="slider_panel">
+                    <img class="slider_image" src="images/mainimg.jpg" alt="">
+                    <img class="slider_image" src="images/mainimg2.jpg" alt="">
+                    <img class="slider_image" src="images/mainimg3.jpg" alt="">
+                    <img class="slider_image" src="images/mainimg4.jpg" alt="">
+                    <img class="slider_image" src="images/mainimg5.jpg" alt="">
+                </div>
+                
+                <!-- 하단 컨트롤 버튼 -->
+                <div class="control_panel">
+                    <div class="control_button"></div>
+                    <div class="control_button"></div>
+                    <div class="control_button"></div>
+                    <div class="control_button"></div>
+                    <div class="control_button"></div>
+                </div>
+                <!-- 좌우 컨트롤 버튼-->
+                <div class="left_right_control_panel">
+                    <img class="left_control" src="images/leftArrow.png" alt="">
+                    <img class="right_control" src="images/rightArrow.png" alt="">
+                </div>
+            </div>
         </div>
         <!-- 비주얼 영역 종료 -->
 
@@ -298,6 +342,8 @@
         <!-- 푸터 영역 종료 -->
     </div>
     <!-- #wrapper 종료 -->
-    <a id="TOP" href="#">TOP</a>
+    <button id="TOP" onclick="topFunction()" title="맨 위로 가기">TOP</button>
+    
 </body>
+    <script src="js/common.js"></script>
 </html>
