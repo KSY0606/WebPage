@@ -47,17 +47,16 @@ header {
     position: relative;
     padding: 20px;
 }
-.logo {
-    position: absolute;
-    top: 30px;
+.logo a:hover {
+    text-decoration: none;
 }
-.logo p {
+.logo {
     display: inline-block;
     position: absolute;
     top: 40px;
-    left: 140px;
+    left: 10px;
     font-weight: normal;
-    font-size: 0.5em;
+    font-size: 1em;
     letter-spacing: 10px;
     color: #4B4B4B;
 }
