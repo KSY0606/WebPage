@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGV 회원가입</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/signUp.css">
     <link rel="icon" href="images/icon.ico">
 </head>
 <body>
@@ -14,9 +14,10 @@
     <div id="wrapper">
         <!-- 헤더 영역 시작 -->
         <header>
-            <h1 class="logo"><p>CULTUREPLEX</p>
+            <h1 class="logo">
                 <a href="index.html">
                     <img src="images/logoRed.png" alt="영화관 로고">
+                    CULTUREPLEX
                 </a>
             </h1>
             <ul class="infoLink">
@@ -103,7 +104,7 @@
                                 <input type="text" id="name" name="name" required>
                             </p>
                             <p>
-                                <label for="birthday">생년월일</label>
+                                <label id="birthday">생년월일</label>
                                 <select name="year" class="day">
                                     <option value="">-- 연도 --</option>
                                     <option value="1995">1980</option>
@@ -179,7 +180,7 @@
                                 </select>
                             </p>
                             <p>
-                                <label for="sex">성별</label>
+                                <label id="sex">성별</label>
                                 <select name="gender" class="gender">
                                     <option value="">-- 성별 --</option>
                                     <option value="남자">남자</option>
@@ -243,7 +244,6 @@
     </div>
     <!-- #wrapper 종료 -->
     <button id="TOP" onclick="topFunction()" title="맨 위로 가기">TOP</button>
-    
-</body>
     <script src="js/common.js"></script>
+</body>
 </html>
