@@ -80,6 +80,9 @@
     background-color: #e84b20;
     border: 1px solid #ed7554;
 }
+#signupArea .btnOk:hover, #signupArea .btnCancle:hover {
+    cursor: pointer;
+}
 #signupArea .btnCancle {
     margin-left: 13px;
     background-color: #686767;

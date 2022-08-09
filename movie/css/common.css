@@ -165,8 +165,12 @@ nav .reserve {
     width: 100%;
     margin-top: 60px;
 }
+#slogan > #sloganimg {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #fff 0%, #fff 24%, #ffa443 24%, #ffa443 99%, #fff 99%, #fff 100%);
+}
 #slogan > #sloganimg > img {
-    width: 100%;
+    width: 60%;
     height: 220px;
 }
 /* 푸터 영역 시작 */
