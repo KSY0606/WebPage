@@ -24,7 +24,7 @@ $(function() {
     });
 
     // 슬라이드 캔버스 영역에 이벤트
-    $(".animation_canvas").hover(function() {
+    $(".slider_panel").hover(function() {
         clearInterval(auto);
     }, function() {
         autoSlider();
