@@ -216,7 +216,7 @@
     font-size: 1.3em;
     margin-bottom: 15px;
 }
-#events div {
+#events > div {
     display: inline-block;
     margin-left: 25px;
 }

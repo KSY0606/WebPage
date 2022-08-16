@@ -10,6 +10,17 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="icon" href="images/icon.ico">
+    <script>
+        let smartPhones = [
+            'iphone', 'ipod', 'ipad', 'opera mini', 'opera mobi', 'nokia', 'android', 'webos', 'windows ce', 'blackberry', 'iemobile', 'sonyericsson'
+        ];
+        // 스마트폰 구분
+        for(let i in smartPhones) {
+            if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))) {
+                document.location = 'http://tkddbs0606.dothome.co.kr/mindex.html';
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- #wrapper 시작 -->
