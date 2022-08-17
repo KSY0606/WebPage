@@ -131,6 +131,11 @@
     right: 8px;
     top: 40px;   
 }
+.ranking .more:hover {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
 .ranking span {
     color: red;
     font-weight: bold;

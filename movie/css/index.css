@@ -303,3 +303,8 @@
     border-radius: 15px;
     padding: 2px 5px;
 }
+/* 더보기, 전체보기 */
+#board .more:hover, #events .more:hover, #ticket .more:hover {
+    border: 2px solid red;
+    text-decoration: none;
+}
