@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙소 예약 사이트</title>
+    <!-- header,  footer 공통 css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- 메인 페이지 css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <!-- 상단 메뉴바 영역 -->
+    <header>
+        <div id="top-menus-area">
+            <div class="logo-area">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/pf.png" alt="메인로고">
+                    </a>
+                </h1>
+            </div>
+            <div class="top-menu-right">
+                <div class="search">
+                    <img src="images/search.png" alt="돋보기">
+                </div>
+                <div class="top-menu">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">예약내역</a></li>
+                        <li><a href="#">더보기</a></li>
+                        <li><a href="#">내주변</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 이미지 영역 -->
+    <div id="main-image-area">
+        <div class="main-img">
+            <img src="images/메인포스터.PNG" alt="메인포스터">
+        </div>
+    </div>
+
+    <!-- 숙소 선택 영역 -->
+    <section id="menu-area">
+        <div class="menu">
+            <ul class="sub-menu">
+                <li>
+                    <a href="#">
+                        <img src="images/모텔.png" alt="모텔">
+                        <span>모텔</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/호텔.png" alt="호텔,리조트">
+                        <span>호텔ㆍ리조트</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/펜션.png" alt="펜션">
+                        <span>펜션</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/게스트하우스.png" alt="게스트하우스">
+                        <span>게스트하우스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/캠핑.png" alt="캠핑,글램핑">
+                        <span>캠핑ㆍ글램핑</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/한옥.png" alt="한옥">
+                        <span>한옥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/내주변.png" alt="내주변">
+                        <span>내주변</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/페이백.png" alt="페이백">
+                        <span>페이백</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 인기 여행지 영역 -->
+    <div id="best-trav-area">
+        <div class="best-trav">
+            <h2>인기여행지</h2>
+            <div class="best-pic-frame">
+                <a href="#" class="best-pic">
+                    <img src="images/제주도.jpg" alt="제주도 사진">
+                    <p>제주도</p>
+                </a>
+                <a href="#" class="best-pic">
+                    <img src="images/강원도.jpg" alt="강원도 사진">
+                    <p>강원도</p>
+                </a>
+                <a href="#" class="best-pic">
+                    <img src="images/부산.jpg" alt="부산 사진">
+                    <p>부산</p>
+                </a>
+                <a href="#" class="best-pic">
+                    <img src="images/경상북도.jpg" alt="경상북도 사진">
+                    <p>경상북도</p>
+                </a>
+                <a href="#" class="best-pic">
+                    <img src="images/전주.jpg" alt="전주 사진">
+                    <p>전주</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 이벤트 영역 -->
+    <div id="event-area">
+        <div class="event">
+            <h2>이벤트</h2>
+            <div class="event-pic-frame">
+                <div class="event-pic ev1">
+                    <a href="#">
+                        <img src="images/가을추천이벤트.png" alt="가을추천이벤트 사진">
+                    </a>
+                </div>
+                <div class="event-pic ev2 ">
+                    <a href="#">
+                        <img src="images/여수이벤트.png" alt="여수이벤트 사진">
+                    </a>
+                </div>
+                <div class="event-pic ev3">
+                    <a href="#">
+                        <img src="images/일본이벤트.png" alt="일본이벤트 사진">
+                    </a>
+                </div>
+                <div class="event-pic ev4">
+                    <a href="#">
+                        <img src="images/제휴할인이벤트.png" alt="제휴할인이벤트 사진">
+                    </a>
+                </div>
+                <div class="event-pic ev5">
+                    <a href="#">
+                        <img src="images/펜션이벤트.png" alt="펜션이벤트 사진">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 소식 영역 -->
+    <div id="News-area">
+        <div class="news">
+            <h2>소식</h2>
+            <div class="news1">
+                <img src="images/소식1.png" alt="여기어때 비즈니스">
+                <p class="p-title">여기어때 비즈니스</p>
+                <p class="p-con">출장부터 복지까지<br>여기어때 비즈니스로 스마트하게</p>
+            </div>
+            <div class="news2">
+                <img src="images/소식2.png" alt="여기어때 서체 출시">
+                <p class="p-title">여기어때 서체 출시</p>
+                <p class="p-con">젋고 당당한 여기어때 잘난체 지금 다운로드 받으세요!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <section id="footer-area">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">소비자 분쟁해결 기준</a></li>
+                <li><a href="#">사업자 정보확인</a></li>
+                <li><a href="#">마케팅센터</a></li>
+                <li><a href="#">엑티비티 호스트센터</a></li>
+                <li><a href="#">여기어때</a></li>
+                <li><a href="#">콘텐츠산업진흥법에의한 표시</a></li>
+            </ul> 
+            <p>
+                고객행복센터 1234-5678 오전 9시 - 새벽 3시
+            </p>
+            <address>
+                <span>(주) ○○○○컴퍼니</span>
+                주소 : 서울특별시 ○○구 ○○○로 ○○○, ○○타워 ○○층 | 대표이사 : ○○○ | 사업자등록번호: ○○○-○○○-○○○○<br>
+                통신판매번호 : ○○○○-서울○○-○○○○○ | 관광사업자 등록번호: 제○○○○-○○호 | 전화번호 : ○○○○-○○○○ | 전자우편주소 : ○○○○@○○○○○.○○<br>
+                (주) ○○○○컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+                <span>Copyright ○○ COMPANY Corp. All rights reserved.</span>
+            </address>
+        </section>
+    </footer>
+</body>
+</html>

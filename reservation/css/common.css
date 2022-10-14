@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* header,  footer 공통 css */
+
+/* 초기화 */
+html, body, div, header, footer, ul, li, section, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* 링크 스타일 */
+a:hover, a:focus {
+    color: #f25b1e;
+}
+/* 기본 스타일 */
+body {
+    color: black;
+    background-color: white;
+    font-size: 1em; /* 12px */
+}
+/* 전체 레이아웃  */
+header, #main-image-area, #menu-area, #best-trav-area, #event-area, #News-area, footer {
+    width: 100%;
+}
+#top-menus-area, .main-img, .menu, .best-trav, .event, .news, #footer-area {
+    width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* 상단 메뉴바 영역 */
+header {
+    height: 70px;
+    background-color: bisque; /* 색 변경 */
+}
+#top-menus-area {
+    height: 70px;
+    background-color: aquamarine; /* 삭제 */
+}
+.logo-area {
+    float: left;
+    width: 200px;
+    height: 70px;
+    background-color: aqua; /* 삭제 */
+}
+.logo {
+    display: inline-block;
+    width: 130px;
+    height: 54px;
+    margin-top: 8px;
+    background-color: blue; /* 삭제 */
+}
+.logo > a {
+    display: inline-block;
+    width: 130px;
+    height: 54px;
+    background-color: azure; /* 삭제 */
+}
+.logo > a > img {
+    width: 130px;
+    height: 54px;
+}
+.top-menu-right {
+    float: right;
+    width: 500px;
+    height: 70px;
+    background-color: #f25b1e;
+}
+.search {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 30px;
+    text-align: center;
+    line-height: 66px;
+    background-color: blue; /* 삭제 */
+}
+.search > img {
+    width: 21px;
+    height: 21px;
+}
+.top-menu {
+    float: right;
+    width: 400px;
+    height: 70px;
+    background-color: aliceblue; /* 삭제 */
+}
+.top-menu > ul {
+    display: inline-block;
+    width: 400px;
+    height: 70px;
+    text-align: center;
+}
+.top-menu > ul > li {
+    display: inline-block;
+    width: 90px;
+    height: 70px;
+    line-height: 70px;
+    background-color: red;
+}
+.top-menu > ul > li > a {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background-color: blue; /* 삭제 */
+}
+
+
+/* 푸터 영역 */
+footer {
+    height: 300px;
+    margin-top: 65px;
+    background-color: chartreuse; /* 색 변경 */
+}
+#footer-area {
+    height: 300px;
+    background-color: aquamarine; /* 삭제 */
+}
+#footer-area > ul {
+    width: 440px;
+    height: 60px;
+    padding: 20px 0 0 10px;
+    background-color: rgb(221, 202, 202); /* 삭제 */
+}
+#footer-area > ul > li {
+    display: inline-block;
+    height: 20px;
+    font-size: 0.6em;
+    margin: 0 7px 5px 0;
+    background-color: aliceblue; /* 삭제 */
+}
+#footer-area > p {
+    margin: 35px 0 0 10px;
+    font-size: 0.75em;
+    font-weight: bold;
+    background-color: blue; /* 삭제 */
+}
+#footer-area > address {
+    height: 140px;
+    font-size: 0.65em;
+    margin: 10px 0 0 10px;
+    background-color: cadetblue; /* 삭제 */
+}
+#footer-area > address > span {
+    display: block;
+    margin: 20px 0;
+}
