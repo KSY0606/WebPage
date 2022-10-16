@@ -37,40 +37,35 @@ header, #main-image-area, #menu-area, #best-trav-area, #event-area, #News-area, 
 /* 상단 메뉴바 영역 */
 header {
     height: 70px;
-    background-color: bisque; /* 색 변경 */
+    background-color: #FF3636; /* 색 변경 */
+    position: fixed;
+    top: 0;
 }
 #top-menus-area {
     height: 70px;
-    background-color: aquamarine; /* 삭제 */
 }
 .logo-area {
     float: left;
     width: 200px;
     height: 70px;
-    background-color: aqua; /* 삭제 */
 }
 .logo {
     display: inline-block;
     width: 130px;
     height: 54px;
     margin-top: 8px;
-    background-color: blue; /* 삭제 */
 }
 .logo > a {
     display: inline-block;
     width: 130px;
     height: 54px;
-    background-color: azure; /* 삭제 */
-}
-.logo > a > img {
-    width: 130px;
-    height: 54px;
+    background-image: url("../images/pf.png");
+    background-size: 130px 54px;
 }
 .top-menu-right {
     float: right;
     width: 500px;
     height: 70px;
-    background-color: #f25b1e;
 }
 .search {
     display: inline-block;
@@ -79,17 +74,15 @@ header {
     margin: 10px 10px 10px 30px;
     text-align: center;
     line-height: 66px;
-    background-color: blue; /* 삭제 */
-}
-.search > img {
-    width: 21px;
-    height: 21px;
+    background-image: url("../images/search.png");
+    background-repeat: no-repeat;
+    background-position: 100% 15px;
+    background-size: 21px 21px;
 }
 .top-menu {
     float: right;
     width: 400px;
     height: 70px;
-    background-color: aliceblue; /* 삭제 */
 }
 .top-menu > ul {
     display: inline-block;
@@ -101,15 +94,15 @@ header {
     display: inline-block;
     width: 90px;
     height: 70px;
+    color: #eaeaea;
+    font-weight: bold;
     line-height: 70px;
-    background-color: red;
 }
 .top-menu > ul > li > a {
     display: inline-block;
     width: 80px;
     height: 30px;
     line-height: 30px;
-    background-color: blue; /* 삭제 */
 }
 
 
