@@ -4,11 +4,9 @@
 #main-image-area {
     height: 440px;
     margin-top: 115px;
-    background-color: antiquewhite; /* 삭제 */
 }
 .main-img {
     height: 440px;
-    background-color: darkgrey; /* 삭제 */
 }
 .main-img > img {
     width: 1024px;
@@ -18,23 +16,19 @@
 /* 숙소 선택 영역 */
 #menu-area {
     height: 170px;
-    background-color: blueviolet; /* 색 변경 */
 }
 .menu {
     height: 170px;
-    background-color: #f25b1e; /* 삭제 */
 }
 .sub-menu {
     display: flex;
     width: 1024px;
     height: 170px;
-    background-color: azure; /* 삭제 */
 }
 .sub-menu > li {
     display: inline-block;
     width: 128px;
     height: 170px;
-    background-color: blue; /* 삭제 */
 }
 .sub-menu > li > a {
     display: inline-block;
@@ -43,7 +37,6 @@
     margin-top: 32.5px;
     margin-left: 5px;
     text-align: center;
-    background-color: bisque; /* 삭제 */
 }
 .sub-menu > li > a > img {
     width: 75px;
@@ -56,7 +49,6 @@
     font-size: 0.95em;
     letter-spacing: -1px;
     text-align: center;
-    background-color: red; /* 삭제 */
     color: #7E7E7E;
 }
 
@@ -64,22 +56,18 @@
 #best-trav-area {
     height: 200px;
     margin-top: 65px;
-    background-color: cornflowerblue; /* 삭제 */
 }
 .best-trav {
     height: 200px;
-    background-color: antiquewhite; /* 삭제 */
 }
 .best-trav > h2 {
     height: 30px;
-    background-color: red; /* 삭제 */
 }
 .best-pic-frame {
     margin-top: 20px;
     display: flex;
     height: 145px;
     text-align: center;
-    background-color: blue; /* 삭제 */
 }
 .best-pic-frame > .best-pic { 
     display: inline-block;
@@ -87,7 +75,6 @@
     height: 120px;
     margin: 12.5px 106px 0 0;
     border-radius: 50%;
-    background-color: #ed9f80; /* 삭제 */
 }
 .best-pic-frame > .best-pic > img { 
     display: inline-block;
@@ -103,72 +90,60 @@
     color: white;
     font-size: 1em;
     font-weight: bold;
-    background-color: red; /* 삭제 */
 }
 
 /* 이벤트 영역 */
 #event-area {
     height: 350px;
     margin-top: 65px;
-    background-color: rgb(16, 188, 119); /* 삭제 */
 }
 .event {
     height: 350px;
-    background-color: rgb(31, 129, 171); /* 삭제 */
 }
 .event > h2 {
     height: 30px;
-    background-color: rgb(148, 200, 52); /* 삭제 */
 }
 .event-pic-frame {
     margin-top: 20px;
     width: 1024px;
     height: 300px;
-    background-color: lightcoral; /* 삭제 */
 }
 .ev1 {
     display: inline-block;
     width: 570px;
     height: 150px;
     margin-left: 10px;
-    background-color: red; /* 삭제 */
 }
 .ev2 {
     float: right;
     width: 424px;
     height: 150px;
-    background-color: blue; /* 삭제 */
 }
 .ev3 {
     display: inline-block;
     width: 273.5px;
     height: 135px;
     margin: 15px 18px 0 10px;
-    background-color: orange; /* 삭제 */
 }
 .ev4 {
     display: inline-block;
     width: 273.5px;
     height: 135px;
     margin-top: 15px;
-    background-color: yellow; /* 삭제 */
 }
 .ev5 {
     float: right;
     width: 424px;
     height: 135px;
     margin-top: 15px;
-    background-color: violet; /* 삭제 */
 }
 .ev1 > a, .ev1 > a > img {
     display: inline-block;
     width: 570px;
     height: 150px;
-    background-color: blue; /* 삭제 */
 }
 .ev2 > a, .ev2 > a > img {
     display: inline-block;
-    background-color: green; /* 삭제 */
     width: 424px;
     height: 150px;
 }
@@ -176,28 +151,23 @@
     display: inline-block;
     width: 273.5px;
     height: 135px;
-    background-color: darkcyan; /* 삭제 */
 }
 .ev5 > a, .ev5 > a > img {
     display: inline-block;
     width: 424px;
     height: 135px;
-    background-color: wheat; /* 삭제 */
 }
 
 /* 소식 영역 */
 #News-area {
     height: 220px;
     margin-top: 65px;
-    background-color: wheat; /* 삭제 */
 }
 .news {
     height: 220px;
-    background-color: antiquewhite; /* 삭제 */
 }
 .news > h2 {
     height: 30px;
-    background-color: rgb(148, 200, 52); /* 삭제 */
 }
 .news1 {
     float: left;
@@ -205,7 +175,7 @@
     height: 170px;
     margin: 20px 0 0 10px;
     position: relative;
-    background-color: red; /* 삭제 */
+    border: 1px solid #ccc;
 }
 .news2 {
     float: right;
@@ -213,7 +183,7 @@
     height: 170px;
     margin: 20px 10px 0 0;
     position: relative;
-    background-color: blue; /* 삭제 */
+    border: 1px solid #ccc;
 }
 .news img {
     width: 170px;
@@ -227,7 +197,6 @@
     position: absolute;
     top: 20px;
     right: 0;
-    background-color: green; /* 삭제 */
     
 }
 .news .p-con {
@@ -239,6 +208,4 @@
     position: absolute;
     top: 80px;
     right: 0;
-    background-color: yellow; /* 삭제 */
-    
 }
