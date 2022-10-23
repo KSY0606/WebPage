@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <!-- 파비콘 -->
+    <link rel="icon" href="images/파비콘.png">
+
+    <!-- 로그인 페이지 css -->
+    <link rel="stylesheet" type="text/css" href="css/sign_in.css">
+
+</head>
+<body>
+    <!-- 로그인 영역 -->
+    <div id="main_frame">
+        <div class="sign_in_frame">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/로고.png">
+                </a>
+            </div>
+            <div id="kakao">
+                <input type="button" value="카카오톡으로 로그인"></input>
+            </div>
+            <div id="facebook">
+                <input type="button" value="Facebook으로 로그인"></input>
+            </div>
+            <div id="naver">
+                <input type="button" value="네이버로 로그인"></input>
+            </div>
+            <p class="or">
+                <span>또는</span>
+            </p>
+            <hr>
+            <form action="login.jsp" method="post" id="signinForm">
+                <fieldset>
+                    <p>
+                        <input type="text" id="userId" name="userId" placeholder="아이디" required>
+                    </p>
+                    <p>
+                        <input type="password" id="userPwd" name="userPwd" placeholder="비밀번호" required>
+                    </p>
+                    <button type="submit" id="sign_in">로그인</button>
+                </fieldset>
+            </form>
+            <div class="sign_in_bottom">
+                <div class="Reset_pwd">
+                    <a href="#">
+                        <span>비밀번호 재설정</span>
+                    </a>
+                </div>
+                <div class="sign_up">
+                    <a href="sign_up.html">
+                        <span>회원가입</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
