@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <!-- 파비콘 -->
+    <link rel="icon" href="images/파비콘.png">
+    <!-- header,  footer 공통 css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- header, footer 호출,  메인메뉴 페이지 스크롤 js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/header_scroll.js"></script>
+
+    <!-- 회원가입 페이지 css -->
+    <link rel="stylesheet" type="text/css" href="css/sign_up.css">
+
+</head>
+<body>
+    <!-- 상단 메뉴바 영역 -->
+    <header id="header"></header>
+
+    <div id="main_frame">
+        <div class="sign_up_frame">
+            <form action="#" method="post" id="signupForm">
+                <fieldset>
+                  <legend>회원가입</legend>
+                  <div class="title">
+                    <label for="id">아이디</label>
+                    <input type="submit" value="중복체크" id="id_check">
+                    <input type="id" id="id">
+                  </div>
+                  <div class="title">
+                    <label for="pwd">비밀번호</label>
+                    <input type="password" id="pwd">
+                  </div>
+                  <div class="title">
+                    <label for="repwd">비밀번호 재확인</label>
+                    <input type="password" id="repwd">
+                  </div>
+                  <div class="title">
+                    <label for="name">성명</label>
+                    <input type="name" id="name">
+                  </div>
+                  <div class="title">
+                    <label for="tel">전화번호("-" 제외)</label>
+                    <input type="tel" id="tel" maxlength="11">
+                  </div>
+                  <div class="title">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" maxlength="30"> 
+                       <span>@</span> 
+                          <select id="mail_Select">
+                             <option>이메일 선택</option>
+                             <option>naver.com</option>
+                             <option>gmail.com</option>
+                             <option>daum.net</option>
+                             <option>hanmail.net</option>
+                             <option>hotmail.com</option>
+                             <option>nate.com</option>
+                             <option>yahoo.co.kr</option>
+                             <option>empas.com</option>
+                             <option>freechal.com</option>
+                             <option>lycos.co.kr</option>
+                             <option>korea.com</option>
+                             <option>hanmir.com</option>
+                             <option>dreamwiz.com</option>
+                             <option>paran.com</option>
+                          </select>
+                    </span>
+                  </div>
+                  <div class="btn_title">
+                    <input type="submit" value="가입하기" class="join_btn">
+                  </div>
+              </fieldset>
+              </form>
+        </div>
+    </div>
+    
+    <!-- 푸터 영역 -->
+    <footer id="footer"></footer>
+</body>
+</html>
