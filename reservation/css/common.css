@@ -19,6 +19,8 @@ body {
     background-color: white;
     font-size: 1em; /* 12px */
 }
+
+
 /* 전체 레이아웃  */
 header, #main-image-area, #menu-area, #best-trav-area, #event-area, #News-area, footer {
     width: 100%;
@@ -28,8 +30,6 @@ header, #main-image-area, #menu-area, #best-trav-area, #event-area, #News-area, 
     margin: 0 auto;
     box-sizing: border-box;
 }
-
-
 /* 상단 메뉴바 영역 */
 header {
     height: 70px;
