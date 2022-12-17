@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* 메인 이미지 */
+#main-image {
+    height: 450px;
+    margin-top: 10px;
+}
+#carouselExampleControls,.carousel-inner, #main-image img {
+    height: 450px;
+}
+/* // 메인 이미지 */
+
+/* 객실 소개 영역 */
+#room-intro {
+    height: 500px;
+}
+.intro-title {
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+.intro-content {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(95, 95, 95);
+}
+.intro-img-area {
+    margin-top: 20px;
+}
+.intro-more {
+    text-align: right;
+    width: 990px;
+}
+.intro-imgs {
+    margin-left: 27px;
+}
+.intro-img {
+    width: 332.3px;
+    float: left;
+}
+.intro-img > img {
+    width: 300px;
+}
+/* // 객실 소개 영역 */
+
+/* 다이닝 소개 영역 */
+#dining-intro {
+    margin-top: 60px;
+    height: 500px;
+}
+.dining-title {
+    text-align: center;
+    font-size: 50px;
+}
+.dining-content {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(95, 95, 95);
+}
+.dining-img-area {
+    margin-top: 20px;
+}
+.dining-more {
+    text-align: right;
+    width: 990px;
+}
+.dining-imgs {
+    margin-left: 27px;
+}
+.dining-img {
+    width: 332.3px;
+    float: left;
+}
+.dining-img > img {
+    width: 300px;
+}
+/* // 다이닝 소개 영역 */
+
+/* Special offers 영역 */
+#offers-area {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#offers-area > h3 {
+    text-align: center;
+    font-size: 50px;
+}
+#offers {
+    margin-top: 20px;
+}
+.offer {
+    display: inline-block;
+    width: 200px;
+}
+.offer > img {
+    width: 200px;
+}
+.offer > p {
+    text-align: center;
+}
+/* // Special offers 영역 */

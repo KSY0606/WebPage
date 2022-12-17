@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지 테스트</title>
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <!-- 메뉴 호버시 드롭 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/dropmenu.js"></script>
+
+    <!-- 공통css -->
+    <link rel="stylesheet" href="css/main_test_common.css">
+    <!-- 메인페이지 css -->
+    <link rel="stylesheet" href="css/main_test.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 상단 메뉴바 -->
+        <div id="top-menus-area">
+            <div class="top-logo">
+                <div class="logo">
+                    <h1>
+                        <a href="#">
+                            <img src="../movie/images/logoRed.png" alt="로고">
+                        </a>
+                    </h1>
+                </div>
+            </div>
+            <div class="top-menu">
+                <div class="menu">
+                    <ul class="top-menus">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- // 상단 메뉴바 -->
+
+        <!-- 메인 메뉴바 -->
+        <header>
+            <nav id="nav">
+                <ul class="main-menu">
+                    <!-- 메인 메뉴1   소개-->
+                    <li>
+                        <a href="#">소개</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">소개</a></li>
+                            <li><a href="#">위치</a></li>
+                        </ul>
+                    </li>
+                    <!-- 메인 메뉴2   객실-->
+                    <li>
+                        <a href="#">객실</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">스탠다드</a></li>
+                            <li><a href="#">이그제큐티브</a></li>
+                            <li><a href="#">디럭스</a></li>
+                            <li><a href="#">스위트</a></li>
+                        </ul>
+                    </li>
+                    <!-- 메인 메뉴3   다이닝-->
+                    <li>
+                        <a href="#">다이닝</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">레스토랑</a></li>
+                            <li><a href="#">라운지&바</a></li>
+                            <li><a href="#">베이커리</a></li>
+                        </ul>
+                    </li>
+                    <!-- 메인 메뉴4   미팅, 이벤트-->
+                    <li>
+                        <a href="#">연회ㆍ이벤트</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">기업연회</a></li>
+                            <li><a href="#">가족연회</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <!-- 메인 메뉴5   고객문의-->
+                    <li>
+                        <a href="#">고객문의</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">예약</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">객실</a></li>
+                            <li><a href="#">다이닝</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- // 메인 메뉴바 -->
+
+        <!-- 서브 메뉴창 배경 -->
+        <div class="sub-back"></div>
+        
+        <!-- 메인페이지 이미지 -->
+        <div id="main-image">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="../../webpage/movie/images/eventPoster1.jpg" class="d-block w-100 ee" alt="#">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="../../webpage/movie/images/combo1.jpg" class="d-block w-100" alt="#">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="../../webpage/movie/images/combo3.jpg" class="d-block w-100" alt="#">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- // 메인페이지 이미지 -->
+
+        <!-- 객실 소개 -->
+        <div id="room-intro">
+            <h3 class="intro-title">@@@@호텔 은 오랜 역사와 전통으로 품격 높은 사교 문화를 뿌리 내리며<br> 한국 최고(最古)의 호텔로 자리잡아 왔습니다.</h3>
+            <p class="intro-content">콘래드 서울의 력셔리한 434개 객실은 도시와 한강이 연출하는 아름다운 뷰와 완벽한 조화를 이룰 뿐 아니라
+                편안한 업무 공간과<br> 인터넷 환경, 그리고 영화, 게임 등을 즐길 수 있는 엔터테인먼트 시설까지 갖추고 있어 즐거움을 더합니다.<br>
+                또한 최고급 바스용품과 24시간 지속되는 객실 서비스는 머무르시는 동안 고객님께 최고의 시간을 선사할 것입니다.
+            </p>
+            <div class="intro-img-area">
+                <div class="intro-more">
+                    <a href="#" class="more" title="더보기">더보기 +</a>
+                </div>
+                <div class="intro-imgs">
+                    <div class="intro-img">
+                        <img src="../movie/images/combo1.jpg" alt="객실1">
+                    </div>
+                    <div class="intro-img">
+                        <img src="../movie/images/combo1.jpg" alt="객실2">
+                    </div>
+                    <div class="intro-img">
+                        <img src="../movie/images/combo1.jpg" alt="객실3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 객실 소개 -->
+
+        <!-- 다이닝 소개 영역 -->
+        <div id="dining-intro">
+            <h3 class="dining-title">DINING</h3>
+            <p class="dining-content">롯데호텔 서울의 업스케일 뷔페 레스토랑 라세느에서는 전문 셰프들이 즉석에서 선보이는 200여 가지의 요리를 경험할 수 있습니다.
+                <br>이외에도 롯데호텔 서울에는 프랑스 요리와 중식, 일식, 한식을 아우르는 다양한 레스토랑이 준비되어 있습니다.<br>
+                조식부터 디너까지 롯데호텔 서울에서 즐기는 세련된 품격과 세심한 다이닝 서비스를 만나보세요.
+            </p>
+            <div class="dining-img-area">
+                <div class="dining-more">
+                    <a href="#" class="more" title="더보기">더보기 +</a>
+                </div>
+                <div class="dining-imgs">
+                    <div class="dining-img">
+                        <img src="../movie/images/combo1.jpg" alt="다이닝1">
+                    </div>
+                    <div class="dining-img">
+                        <img src="../movie/images/combo1.jpg" alt="다이닝2">
+                    </div>
+                    <div class="dining-img">
+                        <img src="../movie/images/combo1.jpg" alt="다이닝3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 다이닝 소개 영역 -->
+
+        <!-- Special offers -->
+        <div id="offers-area">
+            <h3>SPECIAL OFFERS</h3>
+            <section id="offers">
+                <div class="offer">
+                    <img src="../movie/images/combo1.jpg" alt="이벤트1 사진">
+                    <p>이벤트1</p>
+                </div>
+                <div class="offer">
+                    <img src="../movie/images/combo1.jpg" alt="이벤트2사진">
+                    <p>이벤트2</p>
+                </div>
+                <div class="offer">
+                    <img src="../movie/images/combo1.jpg" alt="이벤트3사진">
+                    <p>이벤트3</p>
+                </div>
+                <div class="offer">
+                    <img src="../movie/images/combo1.jpg" alt="이벤트4사진">
+                    <p>이벤트4</p>
+                </div>
+                <div class="offer">
+                    <img src="../movie/images/combo1.jpg" alt="이벤트5사진">
+                    <p>이벤트5</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- footer 영역-->
+        <footer>
+            <div class="f_wrap">
+                <div class="f-top">
+                    <div class="f-top-main">
+                        <div class="f-top-left">
+                            <img src="../movie/images/combo1.jpg" alt="로고">
+                        </div>
+                        <div class="f-top-right">
+                            <ul>
+                                <li><a href="#">호텔소개</a></li>
+                                <li><a href="#">웹사이트 이용약관</a></li>
+                                <li><a href="#">예약 확인</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">고객센터</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="f-middle-line"></div>
+
+            <div class="f_wrap">
+                <div class="f-bottom">
+                    <div class="f-bottom-info">
+                        <p>(유)나이키코리아 대표 KIM MYUNG HEE<br>서울 강남구 테헤란로 152 강남파이낸스센터 31층<br>
+                            통신판매업신고번호 2011-서울강남-03461<br>등록번호 220-88-09068 사업자정보확인<br>
+                            고객센터 전화문의 080-022-0182<br>FAX 02-6744-5880 E-mail service@nike.co.kr<br>
+                            호스팅서비스사업자 브리즈
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- // footer 영역 -->
+    </div>
+     <!-- // wrapper -->
+</body>
+</html>
