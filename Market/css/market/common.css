@@ -298,6 +298,13 @@ body {
 #menu_hover a {
     color: #000;
 }
+#main_menu {
+    position: absolute;
+}
+#sub_menu_clothes, #sub_menu_acc {
+    position: absolute;
+    left: 19.6%;
+}
 #menu_hover a:hover {
     background-color: rgb(246, 68, 72);
     color: white;
