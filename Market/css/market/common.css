@@ -55,6 +55,9 @@ body {
 }
 
 /* header 영역 */
+header, #bot_header_border {
+    z-index: 9999;
+}
 #bot_header_border {
     position: sticky;
     height: 146px;
@@ -303,7 +306,7 @@ body {
 }
 #sub_menu_clothes, #sub_menu_acc {
     position: absolute;
-    left: 19.6%;
+    left: 19.5%;
 }
 #menu_hover a:hover {
     background-color: rgb(246, 68, 72);
