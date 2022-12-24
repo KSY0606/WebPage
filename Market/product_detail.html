@@ -18,6 +18,7 @@
     <!-- 햄버거 메뉴 호버시 -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/market/menu_hover.js"></script>
+    <script src="js/product_detail/detail_menu.js"></script>
     <!-- 파비콘 -->
     <link rel="icon" href="images/market/favicon.ico">
 </head>
@@ -172,9 +173,9 @@
                                 <i class="bi bi-chevron-right"></i>
                             </span>
                             <span>
-                                <ul>
+                                <ul class="entire_bar">
                                     <li><a href="#">의류</a></li>
-                                    <li><a href="#">악세서리</a></li>
+                                    <li class="hidden_menu"><a href="#">악세서리</a></li>
                                 </ul>
                                 <i class="bi bi-chevron-down under_direction"></i>
                             </span>
@@ -185,9 +186,9 @@
                                 <i class="bi bi-chevron-right"></i>
                             </span>
                             <span>
-                                <ul>
+                                <ul class="category_clothes_bar">
                                     <li><a href="#">남성의류</a></li>
-                                    <li><a href="#">여성의류</a></li>
+                                    <li class="hidden_menu"><a href="#">여성의류</a></li>
                                 </ul>
                                 <i class="bi bi-chevron-down under_direction"></i>
                             </span>
@@ -198,9 +199,9 @@
                                 <i class="bi bi-chevron-right"></i>
                             </span>
                             <span>
-                                <ul>
+                                <ul class="category_acc_bar">
                                     <li><a href="#">시계/쥬얼리</a></li>
-                                    <li><a href="#">패션 악세서리</a></li>
+                                    <li class="hidden_menu"><a href="#">패션 악세서리</a></li>
                                 </ul>
                                 <i class="bi bi-chevron-down under_direction"></i>
                             </span>
@@ -392,22 +393,48 @@
 
             <!-- product_info -->
             <div id="product_info">
-                <div class="container text-center">
+                <div class="container text-center info_area">
                     <div class="row g-2">
-                        <div class="col-8">
-                            <div class="p-3 border bg-light">
+                        <div class="col-8 info_area_left">
+                            <div class="info_content">
                                 <div>
                                     <p>
                                         상품정보
                                     </p>
                                 </div>
                                 <div>
-                                    상품내용
+                                    상품내용 입력란입니다.<br>
+                                    테스트메시지<br>
+                                </div>
+                            </div>
+                            <div class="p-3 detailed_information">
+                                <div class="container text-center ">
+                                    <div class="row g-2">
+                                        <div class="col-4">
+                                            <div class="p-3 detailed_information_place">
+                                                <img src="../Market/images/product_detail/bottom_place.png" alt="거래지역"> <span>거래지역</span>
+                                                <p>상세 주소</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="p-3 detailed_information_category">
+                                                <img src="../Market/images/product_detail/category.png" alt="카테고리"> <span>카테고리</span>
+                                                <p>상품 종류</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="p-3 detailed_information_tag">
+                                                <img src="../Market/images/product_detail/tag.png" alt="상품태그"> <span>상품태그</span>
+                                                <p>#최저가 #이벤트중</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-4">
-                            <div class="p-3 border bg-light">
+                            <div class="store_info_area">
                                 <div>
                                     <p>
                                         상점정보
@@ -431,9 +458,11 @@
                                                 </p>
                                             </p>
                                         </div>
-                                        <button>
-                                            <img src="../Market/images/product_detail/follow.png" alt="팔로우">팔로우
-                                        </button>
+                                        <div id="store_follow">
+                                            <button>
+                                                <img src="../Market/images/product_detail/follow.png" alt="팔로우">팔로우
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
@@ -449,7 +478,7 @@
                                     <p>상점후기 <span>0</span></p>
                                     <div>
                                         <p>
-                                            등록된 후기가 없습니다.
+                                            등록된 후기가 없습니다.<br>
                                             첫 후기를 등록해보세요!
                                         </p>
                                         <button>
