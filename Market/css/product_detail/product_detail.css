@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+/* category */
+#category {
+    background-color: red;
+    height: 90px;
+    border-bottom: 1px solid rgb(63, 63, 63);
+    font-size: 13px;
+}
+#category ul {
+    float: left;
+    width: 140px;
+    padding-left: 10px;
+    background-color: orange;
+}
+#category ul li {
+    background-color: blue;
+}
+#category ul li a {
+    display: inline-block;
+    width: 100%;
+    background-color: violet;
+    padding: 3px 0;
+}
+#category ul li a:hover {
+    color: red;
+}
+#category_left, #category_right {
+    padding-top: 20px;
+}
+#category_left {
+    width: 600px;
+    background-color: green;
+}
+#category_left > div {
+
+}
+#home {
+    float: left;
+    background-color: yellow;
+}
+#home > span:nth-child(1) {
+    background-color: green;
+    margin-right: 3px;
+}
+#home > span:nth-child(1) > img {
+    width: 15px;
+}
+
+#entire {
+    float: left;
+    margin-left: 8px;
+}
+#entire > span:nth-child(1), #category_clothes > span:nth-child(1), #category_acc > span:nth-child(1) {
+    background-color: violet;
+    margin-right: 8px;
+}
+#entire > span:nth-child(1) > i {
+    color: red;
+}
+
+#category_clothes, #category_acc {
+    float: left;
+    margin-left: 8px;
+}
+
+#category_right {
+    float: right;
+    width: 418px;
+    text-align: right;
+    background-color: blue;
+}
+#category_right > img {
+    width: 216px;
+    position: relative;
+    top: -20px;
+}
+
+.under_direction {
+    float: left;
+    position: relative;
+    left: -20px;
+}
+/* // category */
+
+
+/* detail_content */
+#detail_content {
+    margin-top: 40px;
+    background-color: violet;
+    height: 530px;
+}
+.detail_content_img {
+    padding-left: 0;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: -60px;
+}
+#change1, #change2, #change3 {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.detail_content_info {
+    text-align: left;
+    padding-left: 35px;
+    padding-right: 0;
+    background-color: yellow;
+}
+.detail_content_info > h2 {
+    background-color: rebeccapurple;
+    padding-top: 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.detail_content_info > p {
+    margin: 20px 0 15px;
+    background-color: orange;
+    font-size: 33px;
+    font-weight: 600;
+}
+.detail_content_info > p > span {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+#detail_content_info_mid {
+    background-color: brown;
+}
+#detail_content_info_mid > p {
+    width: 72px;
+    margin-top: 10px;
+    background-color: orange;
+    float: left;
+}
+#detail_content_info_mid > p::after {
+    content: "|";
+    margin-left: 10px;
+    color: #ccc;
+}
+#detail_content_info_mid > p:nth-child(4) {
+    width: 272.5px;
+    text-align: right;
+}
+#detail_content_info_mid > p:nth-child(3)::after, #detail_content_info_mid > p:nth-child(4)::after {
+    content: "";
+}
+#detail_content_info_mid > p > img {
+    width: 20px;
+}
+#detail_content_info_mid > p:nth-child(2) > img {
+    width: 25px;
+}
+#detail_content_info_mid > p > span {
+    color: #ccc;
+    font-size: 16px;
+}
+
+#detail_content_info_state {
+    background-color: aqua;
+    margin-top: 90px;
+}
+#detail_content_info_state > p {
+    background-color: yellowgreen;
+    margin-bottom: 20px;
+}
+#detail_content_info_state > p > span:nth-child(1) {
+    color: #999;
+    background-color: bisque;
+    display: inline-block;
+    width:110px;
+}
+#detail_content_info_state > p > span:nth-child(2) {
+    background-color: blue;
+}
+#detail_content_info_state img {
+    width: 12px;
+}
+.shipping {
+    color: #6E47EE;
+}
+
+.detail_content_info_btn {
+    background-color: rebeccapurple;
+    margin-top: 44px;
+    padding: 0;
+}
+.info_btn1 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: #ccc;
+}
+.info_btn1 > img {
+    width: 19px;
+}
+.info_btn2 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: #FFA425;
+}
+.info_btn2 > img {
+    width: 22px;
+}
+.info_btn3 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: #F70000;
+}
+/* // detail_content */
+
+
+/* related_products */
+#related_products {
+    margin-top: 5px;
+}
+#related_products > div {
+    margin-bottom: 10px;
+}
+#related_products > div > h3 {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+#related_products > div > p {
+    display: inline-block;
+    color: #9B99A9;
+    font-weight: bold;
+    border: 1px solid rgb(195, 194, 204);
+    border-radius: 12px;
+    padding: 0 6px;
+    position: relative;
+    top: -2px;
+}
+#related_products > div > p > span {
+    margin-left: 3px;
+}
+
+#related_products_imgs {
+    margin-top: 30px;
+    padding: 0;
+}
+.product_list {
+    background-color: yellowgreen;
+}
+.related_products_img > a {
+    display: inline-block;
+    width: 164px;
+    background-color: orange;
+}
+.related_products_img > a > img {
+    width: 164px;
+}
+.related_products_img > a > p {
+    margin-top: 10px;
+    background-color: aqua;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #212121;
+}
+/* // related_products */
+
+
+/* url_images */
+#url_images {
+    margin-top: 100px;
+    border-bottom: 1px solid rgb(33, 33, 33);
+}
+#url_images > p {
+    text-align: right;
+    height: 35px;
+    margin-bottom: 10px;
+}
+#url_images > p > span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+}
+#url_images > p > span:nth-child(1) {
+    background-color: #00CB2F;
+}
+#url_images > p > span:nth-child(1) > img {
+    width: 23px;
+    margin: 2px 2px 0 0;
+}
+#url_images > p > span:nth-child(2) {
+    background-color: #3B5998;
+}
+#url_images > p > span:nth-child(2) > img {
+    width: 10px;
+    margin: 2px 9px 0 0;
+}
+#url_images > p > span:nth-child(3) {
+    background-color: #55ACEE;
+}
+#url_images > p > span:nth-child(3) > img {
+    width: 18px;
+    margin: 2px 5px 0 0;
+}
+#url_images > p > span:nth-child(4) > img {
+    width: 28px;
+    margin: 2px 5px 0 0;
+}
+
+/* // url_images */
