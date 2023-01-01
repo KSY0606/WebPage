@@ -51,4 +51,8 @@ header > div > div {
     font-size: 18px;
     margin-left: 5px;
 }
+
+#top_menu_name {
+    display: none;
+}
 /* // header 영역 */
