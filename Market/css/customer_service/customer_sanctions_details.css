@@ -27,14 +27,14 @@ body, html {
     margin-top: 50px;
 }
 
-
+/* 상단 제목 */
 #title {
     margin: 70px 20px 0;
     font-size: 28px;
     font-weight: bold;
 }
 
-
+/* 정상운영.. */
 #sub_title {
     margin: 30px 20px 0;
     font-size: 22px;
@@ -44,7 +44,7 @@ body, html {
     color: #00A587;
 }
 
-
+/* 제재내역 목록 */
 #content {
     margin: 140px 20px 0;
     text-align: center;
@@ -67,7 +67,7 @@ hr {
     margin: 0 20px;
 }
 
-
+/* 유의사항 */
 #precautions {
     margin: 30px 20px 0;
     height: 240px;
