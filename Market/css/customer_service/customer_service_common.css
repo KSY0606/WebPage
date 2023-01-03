@@ -51,6 +51,12 @@ header > div > div {
     font-size: 18px;
     margin-left: 5px;
 }
+#cancel {
+    float: right;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: underline;
+}
 
 #top_menu_name {
     display: none;
