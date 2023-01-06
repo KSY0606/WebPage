@@ -26,26 +26,6 @@ body, html {
     box-sizing: border-box;
 }
 
-/* header 영역 */
-header {
-    position: fixed;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-header > div {
-    padding: 10px 10px 5px;
-    width: 640px;
-    margin: 0 auto;
-    background-color: white;
-}
-header > div > a > i {
-    font-size: 17px;
-    color: black;
-}
-/* // header 영역 */
-
 
 /* 상단 상점명 */
 #service_top {

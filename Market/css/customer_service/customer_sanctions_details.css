@@ -96,6 +96,10 @@ hr {
     margin-top: 25px;
     color: #7F7F7F;
     font-weight: bold;
+    cursor: pointer;
+}
+#precautions > div:nth-child(3) > a {
+    color: #7F7F7F;
 }
 #precautions > div:nth-child(3) > span {
     margin: 0 10px;
