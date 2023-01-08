@@ -21,75 +21,130 @@
     <script src="js/market/jquery-3.6.0.min.js"></script>
     <script src="js/customer_service/top_show_name.js"></script>
 
+    <!-- 이미지 추가 -->
+    <script src="js/customer_service/customer_contact.js"></script>
+
+    
     <script>
-        /* 사진 첨부 이미지 추가 */
-        $(function () {
-            $('.upload1').click(function (e) {
-                e.preventDefault();
-                $('.img_file1').click();
-            });
-        });
-        $(function () {
-            $('.upload2').click(function (e) {
-                e.preventDefault();
-                $('.img_file2').click();
-            });
-        });
-        $(function () {
-            $('.upload3').click(function (e) {
-                e.preventDefault();
-                $('.img_file3').click();
-            });
-        });
-
-
-        function changeValue(input) {
-            if(input.files && input.files[0] && input.name == "file1") {
-                let reader = new FileReader();
-                reader.onload=function (event) {
-                    document.querySelector(".upload1").src = event.target.result;
-                    document.querySelector(".upload1").classList.remove("img_upload");
-                    document.querySelector(".upload1").classList.add("change_img");
-                    console.log(event)
-                }
-                reader.readAsDataURL(input.files[0]);
-
-            }else if(input.files && input.files[0] && input.name == "file2") {
-                let reader = new FileReader();
-                reader.onload=function (event) {
-                    document.querySelector(".upload2").src = event.target.result;
-                    document.querySelector(".upload2").classList.remove("img_upload");
-                    document.querySelector(".upload2").classList.add("change_img");
-                    console.log(event)
-                }
-                reader.readAsDataURL(input.files[0]);
-
-            }else {
-                let reader = new FileReader();
-                reader.onload=function (event) {
-                    document.querySelector(".upload3").src = event.target.result;
-                    document.querySelector(".upload3").classList.remove("img_upload");
-                    document.querySelector(".upload3").classList.add("change_img");
-                    console.log(event)
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-
-            /* 사진 추가시 (0/3) 숫자 변경 */
-            if(document.inquiry.file1.value.trim() != "") {
-                document.querySelector("#up_num").innerHTML ="1";
-            };
-            if((document.inquiry.file1.value.trim() != "" && document.inquiry.file2.value.trim() != "") || (document.inquiry.file1.value.trim() != "" && document.inquiry.file3.value.trim() != "") || (document.inquiry.file2.value.trim() != "" && document.inquiry.file3.value.trim() != "")) {
-                document.querySelector("#up_num").innerHTML ="2";
-            };
-            if(document.inquiry.file1.value.trim() != "" && document.inquiry.file2.value.trim() != "" && document.inquiry.file3.value.trim() != "") {
-                document.querySelector("#up_num").innerHTML ="3";
-            }
+        function close() {
+            $('#click_choice').css('display', 'none');
+            $('.sub_choice_click').css('display', 'none');
+            $('#bg_color').css('display', 'none');
+            $('html').css('overflowY', 'visible');
+            $('body').css('overflowY', 'visible');
         }
 
-        
-    </script>
+        $(document).ready(function(){
+            /* 유형 선택 박스 클릭시 메뉴들 표시, y스크롤 고정 */
+            $('#choice > div').click(function () {
+                $('#click_choice').css('display', 'block');
+                $('#bg_color').css('display', 'block');
+                $('html').css('overflowY', 'hidden');
+                $('body').css('overflowY', 'hidden');
+            });
 
+            /* 배경 클릭시 닫힘  유형, 상세 유형 모두 포함 */
+            $('#bg_color').click(function () {
+                close();
+            });
+            
+            /* 유형 선택시 배경꺼짐, Text 변경 및 서브 유형창 표시 */
+            $('#click_choice > p').click(function () {
+                document.querySelector("#choice > div > p").innerText = this.innerText;
+                close();
+                $('#sub_choice').css('display', 'block');
+                
+                /* 유형 변경 시 상세유형 리셋 */
+                document.querySelector("#sub_choice > div > p").innerText = "상세 유형을 선택해주세요";
+                $("#sub_choice > div > p").css("color", "#B2B2B2");
+
+                $('#click_choice > p').css('color', '#CCC');
+                $(this).css('color', '#D80C18');
+                $('#choice > div > p').css('color', 'black');
+
+                document.querySelector('#click_choice > p').addEventListener('mouseover', function() {
+                    document.querySelector('#click_choice > p').setAttribute('class', 'hover');
+                })
+            });
+
+
+            /* 상세 유형 선택시 배경꺼짐, Text 변경 */
+            $('.sub_choice_click > p').click(function () {
+                document.querySelector("#sub_choice > div > p").innerText = this.innerText;
+                close();
+                $('.sub_choice_click > p').css('color', '#CCC');
+                $(this).css('color', '#D80C18');
+                $('#sub_choice > div > p').css('color', 'black');
+
+                document.querySelector('#click_choice > p').addEventListener('mouseover', function() {
+                    document.querySelector('#click_choice > p').setAttribute('class', 'hover');
+                })
+            });
+
+            /* 상세 유형 박스 클릭, y스크롤 고정 */
+            /* 거래 신고 */
+
+            function all_close() {
+                $('.trade').css('display', 'none');
+                $('.mem').css('display', 'none');
+                $('.pay').css('display', 'none');
+                $('.care').css('display', 'none');
+                $('.shop').css('display', 'none');
+                $('.sell').css('display', 'none');
+                $('.etc').css('display', 'none');
+                $('.error').css('display', 'none');
+            }
+
+            function y_hidden() {
+                $('#bg_color').css('display', 'block');
+                $('html').css('overflowY', 'hidden');
+                $('body').css('overflowY', 'hidden');
+            }
+
+            $('#sub_choice > div').click(function () {
+                if(document.querySelector("#choice > div > p").innerText == "거래신고") {
+                    all_close();
+                    $('.trade').css('display', 'block');
+                    y_hidden();
+
+                }else if(document.querySelector("#choice > div > p").innerText == "회원/계정") {
+                    all_close();
+                    $('.mem').css('display', 'block');
+                    y_hidden();
+
+                }else if(document.querySelector("#choice > div > p").innerText == "번개페이(안전결제)") {
+                    all_close();
+                    $('.pay').css('display', 'block');
+                    y_hidden();
+
+                }else if(document.querySelector("#choice > div > p").innerText == "번개케어") {
+                    all_close();
+                    $('.care').css('display', 'block');
+                    y_hidden();
+                    
+                }else if(document.querySelector("#choice > div > p").innerText == "프로상점") {
+                    all_close();
+                    $('.shop').css('display', 'block');
+                    y_hidden();
+                    
+                }else if(document.querySelector("#choice > div > p").innerText == "판매광고") {
+                    all_close();
+                    $('.sell').css('display', 'block');
+                    y_hidden();
+                    
+                }else if(document.querySelector("#choice > div > p").innerText == "기타 서비스") {
+                    all_close();
+                    $('.etc').css('display', 'block');
+                    y_hidden();
+                    
+                }else {
+                    all_close();
+                    $('.error').css('display', 'block');
+                    y_hidden();
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -118,14 +173,14 @@
             <div id="choice">
                 <p>유형선택 <i class="bi bi-record-fill"></i></p>
                 <div>
-                    <p>유형을 선택해주세요 <i class="bi bi-chevron-down"></i></p>
+                    <p>유형을 선택해주세요 </p><i class="bi bi-chevron-down"></i>
                 </div>
             </div>
 
             <div id="sub_choice">
                 <p>상세유형 선택 <i class="bi bi-record-fill"></i></p>
                 <div>
-                    <p>상세 유형을 선택해주세요 <i class="bi bi-chevron-down"></i></p>
+                    <p>상세 유형을 선택해주세요 </p><i class="bi bi-chevron-down"></i>
                 </div>
             </div>
             
@@ -171,15 +226,66 @@
     <!-- // wrapper 영역 -->
 
     <!-- 문의하기 유형 선택시 메뉴 -->
-    <div>
-        <p>거래신고</p>
-        <p>회원/계정</p>
-        <p>번개페이(안전결제)</p>
-        <p>번개케어</p>
-        <p>프로상점</p>
-        <p>판매광고</p>
-        <p>기타 서비스</p>
-        <p>오류/신고/제안</p>
+    <div id="bg_color" class="opacity-50"></div>
+    <div id="click_choice">
+        <p class="choice_trade" id="trade">거래신고</p>
+        <p class="choice_member" id="mem">회원/계정</p>
+        <p class="choice_pay" id="pay">번개페이(안전결제)</p>
+        <p class="choice_care" id="care">번개케어</p>
+        <p class="choice_shop" id="shop">프로상점</p>
+        <p class="choice_sell" id="sell">판매광고</p>
+        <p class="choice_etc" id="etc">기타 서비스</p>
+        <p class="choice_error" id="error">오류/신고/제안</p>
+    </div>
+
+    <div class="sub_choice_click trade">
+        <p>판매자신고(미발송)</p>
+        <p>상태불량</p>
+        <p>구매자신고(미입금)</p>
+        <p>안전결제 허위매물</p>
+    </div>
+    <div class="sub_choice_click mem">
+        <p>계정차단</p>
+        <p>로그인/본인인증</p>
+        <p>기타</p>
+    </div>
+    <div class="sub_choice_click pay">
+        <p>정산일정</p>
+        <p>취소/반품</p>
+        <p>기타</p>
+    </div>
+    <div class="sub_choice_click care">
+        <p>정품 검수(명품/스니커즈)</p>
+        <p>기능 검수(스마트폰)</p>
+        <p>추가 서비스(폴리싱/슈클린)</p>
+    </div>
+    <div class="sub_choice_click shop">
+        <p>가입/해지</p>
+        <p>판매제한(미전환)</p>
+        <p>사업자정보 등록/변경</p>
+        <p>프로상점 이용방법</p>
+        <p>정산문의(수수료, 세금계산서)</p>
+        <p>기타</p>
+    </div>
+    <div class="sub_choice_click sell">
+        <p>광고 이용방법</p>
+        <p>광고 심사</p>
+        <p>광고포인트</p>
+        <p>UP하기</p>
+        <p>기타</p>
+    </div>
+    <div class="sub_choice_click etc">
+        <p>내폰시세</p>
+        <p>택배서비스</p>
+        <p>클리닝 서비스(슈클린/프리미엄)</p>
+        <p>폴리싱 서비스(시계/주얼리)</p>
+        <p>프로모션</p>
+        <p>기타</p>
+    </div>
+    <div class="sub_choice_click error">
+        <p>장애신고</p>
+        <p>기타신고</p>
+        <p>서비스제안</p>
     </div>
 </body>
 </html>
