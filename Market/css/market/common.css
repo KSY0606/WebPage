@@ -69,12 +69,12 @@ header, #bot_header_border {
 #side_bar {
     width: 90px;
     height: 410px;
-    /*position: relative;
+    position: relative;
     right: -1039px;
-    top: -44px;*/
-    position: fixed;
+    top: -44px;
+    /*position: fixed;
     right: 143px;
-    top: 142px;
+    top: 142px;*/
     
 }
 #heart {
