@@ -137,6 +137,7 @@ header, #bot_header_border {
 #QR_code {
     height: 122px;
     border: 1px solid rgb(204, 204, 204);
+    background-color: white;
     padding: 10px;
     margin-bottom: 6px;
 }
@@ -234,6 +235,7 @@ header, #bot_header_border {
     height: 36px;
     padding: 18px 15px;
     border: 2px solid rgb(247, 47, 51);
+    outline: none;
 }
 #top_searh > img {
     position: relative;
