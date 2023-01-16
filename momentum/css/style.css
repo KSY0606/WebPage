@@ -1,0 +1,102 @@
+html, body, div, ul, li, h1, h2, form, input, img, span {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#wrap {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    height: 100%;
+}
+
+#clock {
+    font-size: 60px;
+    color: white;
+    padding-top: 20%;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#login_form {
+    margin-top: 30px;
+}
+#login_form > input {
+    width: 230px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+#greeting {
+    margin-top: 30px;
+    height: 40px;
+    color: white;
+}
+
+#todo_form {
+    margin-top: 40px;
+}
+#todo_form > input {
+    width: 450px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid #FFF;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color:transparent;
+}
+#todo_form > input::placeholder {
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+#todo_list {
+    margin: auto;
+    width: 450px;
+    height: 30%;
+    margin-top: 30px;
+    background-color: violet;
+}
+#todo_list > li {
+    background-color: yellow;
+}
+
+
+#quote {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.img_size {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    opacity: 0.7;
+}

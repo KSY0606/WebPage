@@ -16,7 +16,7 @@ function loginBtnClick(info) {
 
 function paintGreetings() {
     const username = localStorage.getItem(username_key);
-    greeting.innerText = `hello ${username}`;
+    greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(hidden_classname);
 }
 
