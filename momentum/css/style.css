@@ -26,12 +26,12 @@ html, body {
 #clock {
     font-size: 60px;
     color: white;
-    padding-top: 20%;
+    padding-top: 17%;
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 #login_form {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 #login_form > input {
     width: 230px;
@@ -45,13 +45,13 @@ html, body {
     text-align: center;
 }
 #greeting {
-    margin-top: 30px;
+    margin-top: 40px;
     height: 40px;
     color: white;
 }
 
 #todo_form {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 #todo_form > input {
     width: 450px;
@@ -77,21 +77,53 @@ html, body {
     width: 450px;
     height: 30%;
     margin-top: 30px;
-    background-color: violet;
+    overflow-y: scroll;
 }
 #todo_list > li {
-    background-color: yellow;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
 }
-
+#todo_list > li > span {
+    display: inline-block;
+    width: 400px;
+    word-wrap:break-word;
+    font-weight: bold;
+    font-size: 18px;
+}
+#todo_list > li > button {
+    border: none;
+    border-radius: 50%;
+    padding-top: 3px;
+    margin-left: 6px;
+}
+#todo_list > li > button:hover {
+    background-color: red;
+    color: white;
+}
 
 #quote {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
     color: white;
 }
 
+#weather {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    font-weight: bold;
+}
+#weather > span {
+    display: block;
+    margin-top: 6px;
+}
+#weather span:last-child {
+    margin-left: 15px;
+}
 .img_size {
     width: 100%;
     height: 100%;

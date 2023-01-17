@@ -8,12 +8,21 @@ function onGeoOk(position) {
         const weather = document.querySelector("#weather span:first-child")
         const city = document.querySelector("#weather span:last-child")
         city.innerText = data.name;
-        weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+        if(`${data.weather[0].main}` === "Clouds") {
+            weather.innerText = `☁️ / ${data.main.temp}°`
+        }else if(`${data.weather[0].main}` === "Rain") {
+            weather.innerText = `☔ / ${data.main.temp}°`
+        }else if(`${data.weather[0].main}` === "Snow") {
+            weather.innerText = `⛄ / ${data.main.temp}°`
+        }else if(`${data.weather[0].main}` === "Thunderstorm") {
+            weather.innerText = `⚡ / ${data.main.temp}°`
+        }else {
+            weather.innerText = `☀️ / ${data.main.temp}°`
+        }
     });
 }
-
 function onGeoError() {
-    alert("can't find you. No weather for you.");
+    alert("현재 위치를 찾을 수 없습니다.");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
