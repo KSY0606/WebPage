@@ -1,4 +1,4 @@
-const API_KEY = "37b6ee7b6a12f6687601e1a477dbdbdb";
+const API_KEY = config.apikey;
 
 function onGeoOk(position) {
     const lat = position.coords.latitude;
@@ -19,6 +19,7 @@ function onGeoOk(position) {
         }else {
             weather.innerText = `☀️ / ${data.main.temp}°`
         }
+        console.log(lat, lon);
     });
 }
 function onGeoError() {
