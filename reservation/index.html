@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>숙소 예약 사이트</title>
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
     <!-- 파비콘 -->
-    <link rel="icon" href="images/파비콘.png">
+    <link rel="icon" href="images/common/파비콘.png">
+
     <!-- header,  footer 공통 css -->
-    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/common/common.css">
+
     <!-- header, footer 호출,  메인메뉴 페이지 스크롤 js-->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/header_scroll.js"></script>
+    <script src="js/common/jquery-3.6.0.min.js"></script>
+    <script src="js/common/header.js"></script>
+    <script src="js/common/footer.js"></script>
+    <script src="js/common/header_scroll.js"></script>
 
     <!-- 메인 페이지 css -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-
+    <link rel="stylesheet" type="text/css" href="css/index/index.css">
 </head>
 <body>
     <!-- 상단 메뉴바 영역 -->
@@ -26,7 +30,7 @@
     <!-- 메인 이미지 영역 -->
     <div id="main-image-area">
         <div class="main-img">
-            <img src="images/메인포스터.PNG" alt="메인포스터">
+            <img src="images/index/메인포스터.PNG" alt="메인포스터">
         </div>
     </div>
 
@@ -36,49 +40,49 @@
             <ul class="sub-menu">
                 <li>
                     <a href="#">
-                        <img src="images/모텔.png" alt="모텔">
+                        <img src="images/index/모텔.png" alt="모텔">
                         <span>모텔</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/호텔.png" alt="호텔,리조트">
+                        <img src="images/index/호텔.png" alt="호텔,리조트">
                         <span>호텔ㆍ리조트</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/펜션.png" alt="펜션">
+                        <img src="images/index/펜션.png" alt="펜션">
                         <span>펜션</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/게스트하우스.png" alt="게스트하우스">
+                        <img src="images/index/게스트하우스.png" alt="게스트하우스">
                         <span>게스트하우스</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/캠핑.png" alt="캠핑,글램핑">
+                        <img src="images/index/캠핑.png" alt="캠핑,글램핑">
                         <span>캠핑ㆍ글램핑</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/한옥.png" alt="한옥">
+                        <img src="images/index/한옥.png" alt="한옥">
                         <span>한옥</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/내주변.png" alt="내주변">
+                        <img src="images/index/내주변.png" alt="내주변">
                         <span>내주변</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/페이백.png" alt="페이백">
+                        <img src="images/index/s페이백.png" alt="페이백">
                         <span>페이백</span>
                     </a>
                 </li>
@@ -92,23 +96,23 @@
             <h2>인기여행지</h2>
             <div class="best-pic-frame">
                 <a href="#" class="best-pic">
-                    <img src="images/제주도.jpg" alt="제주도 사진">
+                    <img src="images/index/제주도.jpg" alt="제주도 사진">
                     <p>제주도</p>
                 </a>
                 <a href="#" class="best-pic">
-                    <img src="images/강원도.jpg" alt="강원도 사진">
+                    <img src="images/index/강원도.jpg" alt="강원도 사진">
                     <p>강원도</p>
                 </a>
                 <a href="#" class="best-pic">
-                    <img src="images/부산.jpg" alt="부산 사진">
+                    <img src="images/index/부산.jpg" alt="부산 사진">
                     <p>부산</p>
                 </a>
                 <a href="#" class="best-pic">
-                    <img src="images/경상북도.jpg" alt="경상북도 사진">
+                    <img src="images/index/경상북도.jpg" alt="경상북도 사진">
                     <p>경상북도</p>
                 </a>
                 <a href="#" class="best-pic">
-                    <img src="images/전주.jpg" alt="전주 사진">
+                    <img src="images/index/전주.jpg" alt="전주 사진">
                     <p>전주</p>
                 </a>
             </div>
@@ -122,27 +126,27 @@
             <div class="event-pic-frame">
                 <div class="event-pic ev1">
                     <a href="#">
-                        <img src="images/가을추천이벤트.png" alt="가을추천이벤트 사진">
+                        <img src="images/index/가을추천이벤트.png" alt="가을추천이벤트 사진">
                     </a>
                 </div>
                 <div class="event-pic ev2 ">
                     <a href="#">
-                        <img src="images/여수이벤트.png" alt="여수이벤트 사진">
+                        <img src="images/index/여수이벤트.png" alt="여수이벤트 사진">
                     </a>
                 </div>
                 <div class="event-pic ev3">
                     <a href="#">
-                        <img src="images/일본이벤트.png" alt="일본이벤트 사진">
+                        <img src="images/index/일본이벤트.png" alt="일본이벤트 사진">
                     </a>
                 </div>
                 <div class="event-pic ev4">
                     <a href="#">
-                        <img src="images/제휴할인이벤트.png" alt="제휴할인이벤트 사진">
+                        <img src="images/index/제휴할인이벤트.png" alt="제휴할인이벤트 사진">
                     </a>
                 </div>
                 <div class="event-pic ev5">
                     <a href="#">
-                        <img src="images/펜션이벤트.png" alt="펜션이벤트 사진">
+                        <img src="images/index/펜션이벤트.png" alt="펜션이벤트 사진">
                     </a>
                 </div>
             </div>
@@ -154,12 +158,12 @@
         <div class="news">
             <h2>소식</h2>
             <div class="news1">
-                <img src="images/소식1.png" alt="여기어때 비즈니스">
+                <img src="images/index/소식1.png" alt="여기어때 비즈니스">
                 <p class="p-title">여기어때 비즈니스</p>
                 <p class="p-con">출장부터 복지까지<br>여기어때 비즈니스로 스마트하게</p>
             </div>
             <div class="news2">
-                <img src="images/소식2.png" alt="여기어때 서체 출시">
+                <img src="images/index/소식2.png" alt="여기어때 서체 출시">
                 <p class="p-title">여기어때 서체 출시</p>
                 <p class="p-con">젋고 당당한 여기어때 잘난체 지금 다운로드 받으세요!</p>
             </div>

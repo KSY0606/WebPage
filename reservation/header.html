@@ -1,24 +1,32 @@
-<header>
-    <div id="top-menus-area">
-        <div class="logo-area">
-            <h1 class="logo">
-                <a href="index.html">
+<div id="top-menus-area">
+    <div class="logo-area">
+        <h1 class="logo">
+            <a href="index.html">
 
-                </a>
-            </h1>
+            </a>
+        </h1>
+    </div>
+    <div class="top-menu-right">
+        <div class="search">
+            
         </div>
-        <div class="top-menu-right">
-            <div class="search">
-                
-            </div>
-            <div class="top-menu">
-                <ul>
-                    <li><a href="sign_in.html">로그인</a></li>
-                    <li><a href="#">예약내역</a></li>
-                    <li><a href="#">더보기</a></li>
-                    <li><a href="#">내주변</a></li>
-                </ul>
-            </div>
+        <div class="top-menu">
+            <ul>
+                <li><a href="sign_in.html">로그인</a></li>
+                <li><a href="#">예약내역</a></li>
+                <li onmouseover="show_more()" onmouseleave="show_more_del()">
+                    <a href="more_notice.html">더보기</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">혁신 프로젝트</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">1:1 문의</a></li>
+                        <li><a href="#">약관 및 정책</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">내주변</a></li>
+            </ul>
         </div>
     </div>
-</header>
+</div>
