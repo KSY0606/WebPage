@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더보기 (자주 묻는 질문)</title>
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- 부트스트랩 icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="../../images/common/파비콘.png">
+
+    <!-- header,  footer 공통 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/common/common.css">
+    
+    <!-- header, footer 호출,  메인메뉴 페이지 스크롤 js-->
+    <script src="../../js/common/jquery-3.6.0.min.js"></script>
+    <script src="../../js/common/header&footer.js"></script>
+    <script src="../../js/common/header_scroll.js"></script>
+
+    <!-- 자주 묻는 질문 css, js -->
+    <link rel="stylesheet" type="text/css" href="../../css/more_page/more_page_common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/more_page/FAQ.css">
+    <script src="../../js/more_page/faq_select_menu.js"></script>
+</head>
+<body>
+    <!-- 상단 메뉴바 영역 -->
+    <header id="header"></header>
+
+    <!-- "더보기" 고정란 -->
+    <div class="top_more_wrap">
+        <div>
+        <h2>
+            더보기
+        </h2>
+    </div>
+    </div>
+    <!-- // "더보기" 고정란 -->
+
+    <!-- 이벤트 내용 -->
+    <div id="more_wrap">
+        <div class="container">
+            <div class="row">
+                <!-- 좌측 메뉴란 -->
+                <div class="col-3 left_menu">
+                    <ul>
+                        <li>
+                            <a href="more_notice.html">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="event.html">
+                                이벤트
+                            </a>
+                        </li>
+                        <li>
+                            <a href="FAQ.html">
+                                자주 묻는 질문
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                1:1 문의
+                            </a>
+                        </li>
+                        <li>
+                            <a href="policy.html">
+                                약관 및 정책
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                채용 약관
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // 좌측 메뉴란 -->
+
+                <!-- 우측 contents -->
+                <div class="col-9 right_menu">
+                    <!-- 우측 content 상단 제목 -->
+                    <div class="menu_name_area">
+                        <span>TOP7</span>
+                        <span>이용문의</span>
+                        <span>결제/영수증</span>
+                        <span>국내 숙소</span>
+                        <span>쿠폰/포인트</span>
+                    </div>
+                    <!-- // 우측 content 상단 제목 -->
+
+                    <!-- 우측 하단 content -->
+                    <div class="menu_contents_area">
+                        <!-- TOP7 공지 내용 -->
+                        <div class="faq_contents_area">
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [숙박] 예약을 취소하고 싶어요.
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [공통] 천재지변/감염병으로 인한 예약취소는 어떻게 하나요?
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [숙박] 예약대기 건 예약취소하고 싶어요.
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // TOP7 공지 내용 -->
+
+                        <!-- 이용문의 공지 내용 -->
+                        <div class="faq_contents_area">
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [이용문의] 고객센터 연결 지연 시 어떻게 하나요?
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [이용문의] 어떻게하면 엘리트가 될 수 있나요?
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [회원정보] 회원탈퇴는 어떻게 하나요?
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 이용문의 공지 내용 -->
+
+                        <!-- 결제/영수증 공지 내용 -->
+                        <div class="faq_contents_area">
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        현금영수증 발급받고 싶어요.
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        결제 영수증 발급받고 싶어요.
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        계좌 등록 후 은행에서 문자가 왔어요.
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 결제/영수증 공지 내용 -->
+
+                        <!-- 국내 숙소 공지 내용 -->
+                        <div class="faq_contents_area">
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [국내숙소] 취소/환불규정은 어떻게 되나요?
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        예약을 취소하고 싶어요.
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        예약확인은 어떻게 하나요?
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 국내 숙소 공지 내용 -->
+
+                        <!-- 쿠폰/포인트 공지 내용 -->
+                        <div class="faq_contents_area">
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [포인트]포인트는 무엇인가요?
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [포인트]포인트 사용 기간이 궁금해요.
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [포인트]포인트 차감 순서가 궁금해요.
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq_content">
+                                <div>
+                                    <p>
+                                        [포인트] 소멸 예정 포인트는 무엇인가요?
+                                    </p>
+                                    <p>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 쿠폰/포인트 공지 내용 -->
+                    </div>
+                    <!-- // 우측 하단 content -->
+                </div>
+                <!-- // 우측 contents -->
+            </div>
+        </div>
+    </div>
+    <!-- // 공지사항 내용 -->
+
+    <!-- 푸터 영역 -->
+    <footer id="footer"></footer>
+</body>
+</html>

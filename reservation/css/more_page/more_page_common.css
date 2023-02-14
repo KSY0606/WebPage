@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* 더보기 페이지 본문 영역 */
+#more_wrap {
+    margin: 50px auto;
+    width: 1024px;
+}
+
+/* 상단 "더보기" 고정란 */
+.top_more_wrap {
+    background-color: #f7323f;
+    height: 150px;
+}
+.top_more_wrap > div {
+    width: 1024px;
+    margin: 0 auto;
+}
+.top_more_wrap > div > h2 {
+    margin-top: 70px;
+    margin-left: 5px;
+    font-size: 38px;
+    font-weight: normal;
+    color: white;
+    padding-top: 20px;
+    letter-spacing: -3px;
+}
+/* // 상단 "더보기" 고정란 */
+
+/* 좌측 메뉴란 */
+.left_menu {
+    padding-left: 27px;
+}
+.left_menu > ul > li {
+    margin-bottom: 21px;
+    color: rgba(0,0,0,0.56);
+}
+/* // 좌측 메뉴란 */

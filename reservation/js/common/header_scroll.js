@@ -1,8 +1,8 @@
-var logo = "images/common/logo.png";
-var ch_logo = "images/common/ch_logo.png";
-var sc_logo = "images/호텔.png";
-var search = "images/common/search.png";
-var sc_search = "images/common/sc_search.png";
+var logo = "../../images/common/logo.png";
+var ch_logo = "../../images/common/ch_logo.png";
+
+var search = "../../images/common/search.png";
+var sc_search = "../../images/common/sc_search.png";
 
 $(document).ready(function(){
   $(window).scroll(function(){

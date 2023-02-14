@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 좌측 메뉴란 */
+.left_menu > ul > li:nth-child(3) {
+    color: #E61C51;
+    font-weight: bold;
+}
+/* 좌측 메뉴란 */
+
+/* 우측 content */
+.menu_name_area {
+    height: 45px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+}
+.menu_name_area > span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.menu_name_area > span:nth-child(1) {
+    font-weight: bold;
+    color: #E61C51;
+}
+
+.faq_contents_area {
+    display: none;
+}
+.faq_contents_area:nth-child(1) {
+    display: block;
+}
+.faq_content {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 30px 0;
+    cursor: pointer;
+}
+.faq_content > div > p:nth-child(1) {
+    float: left;
+    font-weight: bold;
+}
+.faq_content > div > p:nth-child(2) {
+    float: right;
+}
+.faq_content > div {
+    height: 30px;
+}
+/* // 우측 content */

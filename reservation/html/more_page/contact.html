@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더보기 (1:1문의)</title>
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- 부트스트랩 icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="../../images/common/파비콘.png">
+
+    <!-- header,  footer 공통 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/common/common.css">
+    
+    <!-- header, footer 호출,  메인메뉴 페이지 스크롤 js-->
+    <script src="../../js/common/jquery-3.6.0.min.js"></script>
+    <script src="../../js/common/header&footer.js"></script>
+    <script src="../../js/common/header_scroll.js"></script>
+
+    <!-- 1:1문의 css, js -->
+    <link rel="stylesheet" type="text/css" href="../../css/more_page/more_page_common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/more_page/contact.css">
+    <script src="../../js/more_page/contact_select_menu.js"></script>
+</head>
+<body>
+    <!-- 상단 메뉴바 영역 -->
+    <header id="header"></header>
+
+    <!-- "더보기" 고정란 -->
+    <div class="top_more_wrap">
+        <div>
+        <h2>
+            더보기
+        </h2>
+    </div>
+    </div>
+    <!-- // "더보기" 고정란 -->
+
+    <!-- 이벤트 내용 -->
+    <div id="more_wrap">
+        <div class="container">
+            <div class="row">
+                <!-- 좌측 메뉴란 -->
+                <div class="col-3 left_menu">
+                    <ul>
+                        <li>
+                            <a href="more_notice.html">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="event.html">
+                                이벤트
+                            </a>
+                        </li>
+                        <li>
+                            <a href="FAQ.html">
+                                자주 묻는 질문
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                1:1 문의
+                            </a>
+                        </li>
+                        <li>
+                            <a href="policy.html">
+                                약관 및 정책
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                채용 약관
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // 좌측 메뉴란 -->
+
+                <!-- 우측 contents -->
+                <div class="col-9 right_menu">
+                    <!-- 우측 content 상단 제목 -->
+                    <div class="menu_name_area">
+                        <span>나의 문의 내역</span>
+                        <span>새 문의 작성</span>
+                    </div>
+                    <!-- // 우측 content 상단 제목 -->
+
+                    <!-- 우측 하단 content -->
+                    <div class="menu_contents_area">
+                        <!-- 문의 내역 -->
+                        <div class="contact_history">
+                            <div>
+                                <p>등록된 1:1 문의가 없습니다.</p>
+                                <p>
+                                    여기어때는 회원님들의 소중한 의견에 귀기울여<br>
+                                    신속하고 정확하게 답변드리도록 하겠습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- // 문의 내역 -->
+
+                        <!-- 문의 작성 -->
+                        <div class="contact_write">
+                            <!-- 상단 설명글 -->
+                            <div>
+                                <p>
+                                    여기어때 이용 중 불편하신 점을 문의주시면 최대한 빠른 시일내에 답변 드리겠습니다.
+                                </p>
+                            </div>
+                            <!-- // 상단 설명글 -->
+
+                            <!-- 입력란 -->
+                            <section>
+                                <div>
+                                    <p>
+                                        카테고리 유형
+                                    </p>
+                                    <select>
+                                        <option>카테고리 유형을 선택하세요.</option>
+                                        <option>모텔</option>
+                                        <option>호텔.리조트</option>
+                                        <option>펜션</option>
+                                        <option>게스트하우스</option>
+                                        <option>캠핑/글램핑</option>
+                                        <option>한옥</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p>
+                                        문의 유형
+                                    </p>
+                                    <select>
+                                        <option>이벤트</option>
+                                        <option>예약/결제</option>
+                                        <option>취소/환불</option>
+                                        <option>이용문의</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p>
+                                        휴대폰 번호
+                                    </p>
+                                    <input type="number" maxlength="11" placeholder="선택사항입니다.">
+                                </div>
+                                <div>
+                                    <p>
+                                        이메일
+                                    </p>
+                                    <input type="email" placeholder="선택사항입니다.">
+                                </div>
+                            </section>
+                            <!-- // 입력란 -->
+
+                            <!-- 문의내용 -->
+                            <section>
+                                <p>
+                                    문의 내용
+                                </p>
+                                <div>
+                                    <textarea>
+                                        문의하실 내용을 10자 이상 입력해 주세요.
+                                        문의하시는 제휴점 이름과 예약정보를 남겨주시면 보다 빠른 상담이 가능합니다.
+                                        문의 내용 작성 시 개인정보가 입력되지 않도록 주의 부탁드립니다.
+                                    </textarea>
+                                </div>
+                            </section>
+                            <!-- // 문의내용 -->
+
+                            <!-- 완료 버튼 -->
+                            <section>
+                                <button>작성 완료</button>
+                            </section>
+                            <!-- 완료 버튼 -->
+                        </div>
+                        <!-- 문의 작성 -->
+                    </div>
+                    <!-- // 우측 하단 content -->
+                </div>
+                <!-- // 우측 contents -->
+            </div>
+        </div>
+    </div>
+    <!-- // 공지사항 내용 -->
+
+    <!-- 푸터 영역 -->
+    <footer id="footer"></footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* 좌측 메뉴란 */
+.left_menu > ul > li:nth-child(2) {
+    color: #E61C51;
+    font-weight: bold;
+}
+/* 좌측 메뉴란 */
+
+/* 우측 content */
+.events {
+    margin-bottom: 80px;
+}
+.event_top {
+    margin-bottom: 10px;
+}
+.event_top > p {
+    font-weight: bold;
+}
+.event_top > span {
+    font-size: 16px;
+    color: rgba(0,0,0,0.56);
+}
+.event_bot {
+    width: 725px;
+    height: 145px;
+}
+.event_bot > img {
+    width: 725px;
+    height: 145px;
+}
+/* // 우측 content */
