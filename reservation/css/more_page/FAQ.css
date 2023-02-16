@@ -14,6 +14,7 @@
     margin-bottom: 5px;
 }
 .menu_name_area > span {
+    font-size: 14px;
     margin-right: 15px;
     cursor: pointer;
 }
