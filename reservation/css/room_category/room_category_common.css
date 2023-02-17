@@ -44,6 +44,7 @@
 /* 숙소별 카테고리 선택 영역 */
 .room_category_title {
     border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-left: 25px;
 }
 .room_category_title > p {
     display: inline-block;
@@ -53,13 +54,6 @@
 }
 .room_category_title > p > a {
     padding: 15px 10px;
-}
-
-
-.room_category_title > p:nth-child(1) {
-    font-weight: bold;
-    color: rgb(242,17,76);
-    padding-left: 0;
 }
 .room_category_title > p:nth-child(1) > a {
     padding-left: 0;
@@ -88,7 +82,10 @@ input[type="checkbox"]{
 }
 .left_menu_inner {
     padding: 25px;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 4px;
 }
+
 /* 날짜 */
 .days {
     padding-bottom: 30px;
@@ -97,7 +94,7 @@ input[type="checkbox"]{
 .days > p {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* 상세조건 */
@@ -111,7 +108,7 @@ input[type="checkbox"]{
     margin-bottom: 10px;
 }
 .condition > p:nth-child(2) > button {
-    width: 120px;
+    width: 119px;
     height: 40px;
     border-radius: 5px;
     border: none;
@@ -125,161 +122,152 @@ input[type="checkbox"]{
     background-color: rgb(242, 7, 76);
     color: white;
 }
-
-/* 예약 */
-.reseerve {
-    margin-bottom: 30px;
-}
-.reseerve li {
-    margin-bottom: 10px;
-}
-.reseerve li label {
-    margin-left: 5px;
-}
-
-/* 이색테마 */
-.tema {
-    margin-bottom: 30px;
-}
-.tema > p {
-    color: rgba(0,0,0,0.56);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.tema li {
-    display: inline-block;
-    font-size: 14px;
-    width: 120px;
-    margin-bottom: 10px;
-    letter-spacing: -1px;
-}
-.tema li label {
-    margin-left: 5px;
-}
-
-/* 스파 시설 */
-.spa {
-    margin-bottom: 30px;
-}
-.spa > p {
-    color: rgba(0,0,0,0.56);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.spa li {
-    display: inline-block;
-    font-size: 14px;
-    width: 120px;
-    margin-bottom: 10px;
-    letter-spacing: -1px;
-}
-.spa li label {
-    margin-left: 5px;
-}
-
-/* 놀이시설 */
-.play {
-    margin-bottom: 30px;
-}
-.play > p {
-    color: rgba(0,0,0,0.56);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.play li {
-    display: inline-block;
-    font-size: 14px;
-    width: 120px;
-    margin-bottom: 10px;
-    letter-spacing: -1px;
-}
-.play li label {
-    margin-left: 5px;
-}
-
-/* 혜택 */
-.benefits {
-    margin-bottom: 30px;
-}
-.benefits > p {
-    color: rgba(0,0,0,0.56);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.benefits button {
-    font-size: 14px;
-    margin-bottom: 10px;
-    letter-spacing: -1px;
-    border: 1px solid rgba(0,0,0,0.27);
-    border-radius: 32px;
-    color: rgba(0,0,0,0.56);
-    background-color: white;
-    padding: 4px 7px;
-}
-
-/* 가격 */
-.value {
-    margin-bottom: 30px;
-}
-
-.form-label {
-    font-weight: bold;
-    color: rgba(0,0,0,0.56);
-}
-.value > label > span {
-    color: #f7323f;
-    font-weight: normal;
-    font-size: 12px;
-}
-.change_num {
-    margin-left: 7px;
-}
-.value > p {
-    clear: both;
-}
-.value > p > span {
-    font-weight: normal;
-    font-size: 12px;
-    color: rgba(0,0,0,0.56);
-}
-.value > p > span:nth-child(1) {
-    float: left;
-}
-.value > p > span:nth-child(2) {
-    float: right;
-}
+/* // 상세조건 */
 
 /* 거리 범위 */
-.range {
-    clear: both;
-    margin-bottom: 30px;
-}
 .range > p {
     color: rgba(0,0,0,0.56);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
-.range button {
+.range li {
     font-size: 14px;
+    width: 120px;
     margin-bottom: 10px;
     letter-spacing: -1px;
-    border: 1px solid rgba(0,0,0,0.27);
-    border-radius: 32px;
-    color: rgba(0,0,0,0.56);
-    background-color: white;
-    padding: 4px 7px;
 }
-
-
+.range li > input {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.range li > label {
+    margin-left: 5px;
+}
+/* //거리 범위 */
 /* // 좌측 상세조건 창 영역 */
 
+
+/* 우측 숙소 리스트*/
 .right_menu {
-    background-color: violet;
+    padding-right: 0;
 }
 
-
-
-
-img {
-    width: 300px;
+.sort {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background-color: rgba(250,250,250,0.6);
+    font-size: 15px;
+    letter-spacing: -1px;
 }
+.sort > div {
+    padding: 0;
+}
+.distance_sort, .low_sort {
+    border-right: 1px solid rgba(0,0,0,0.08);
+}
+
+.top_recommend {
+    margin: 25px 0 10px;
+}
+.top_recommend > p:nth-child(1) {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    display: inline-block;
+}
+.top_recommend > p:nth-child(2) {
+    float: right;
+    text-align: right;
+    color: rgba(0,0,0,0.56);
+}
+.top_recommend > p:nth-child(2) > img {
+    width: 20px;
+    position: relative;
+    top: -2px;
+}
+
+.room_infos {
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.room_infos > div {
+    padding: 15px 0;
+}
+.room_img {
+    display: inline-block;
+    width: 152px;
+    height: 246px;
+    position: relative;
+    overflow: hidden;
+}
+.room_img > img {
+    height: 246px;
+    position: absolute;
+    left: -99%;
+}
+.room_title_info {
+    float: right;
+    width: 500px;
+    height: 246px;
+}
+.room_title_info > h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.room_title_info > p:nth-child(2) {
+    color: rgb(255,167,38);
+    margin-bottom: 5px;
+}
+.room_title_info > p:nth-child(2) > span:nth-child(1) {
+    background-color: rgb(255,167,38);
+    color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.room_title_info > p:nth-child(2) > span:nth-child(2) {
+    font-weight: bold;
+}
+.room_title_info > p:nth-child(3) {
+    margin-bottom: 5px;
+}
+.room_title_info > p:nth-child(4) {
+    color: rgba(0,0,0,0.56);
+    margin-bottom: 5px;
+}
+.room_title_info > div {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+.room_title_info > div > p {
+    font-size: 18px;
+    color: rgba(0,0,0,0.72);
+}
+.room_title_info > div > p:nth-child(1) {
+    margin-bottom: 3px;
+}
+.room_title_info > div > p > span:nth-child(1) {
+    background-color: #F8716F;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 1px 3px;
+}
+.room_title_info > div > p > span:nth-child(2) {
+    font-weight: bold;
+    color: black;
+}
+
+.room_info_area > div:nth-child(2) {
+    margin: 25px 0 10px;
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* // 우측 숙소 리스트*/

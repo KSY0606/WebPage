@@ -39,7 +39,7 @@ header {
     background-color: #f7323f;
     position: fixed;
     top: 0;
-    
+    z-index: 9999;
 }
 #top-menus-area {
     height: 70px;

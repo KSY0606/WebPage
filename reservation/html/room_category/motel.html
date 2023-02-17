@@ -25,11 +25,10 @@
     <link rel="stylesheet" type="text/css" href="../../css/room_category/room_category_common.css">
     <link rel="stylesheet" type="text/css" href="../../css/room_category/motel.css">
 
-    
-<!-- 달력 -->
-<link rel="stylesheet" href="../../css/room_category/datepicker.min.css">
-<script src="../../js/room_category/datepicker.min.js"></script>
-<script src="../../js/room_category/datepicker.ko.js"></script>
+    <!-- 달력 -->
+    <link rel="stylesheet" href="../../css/room_category/datepicker.min.css">
+    <script src="../../js/room_category/datepicker.min.js"></script>
+    <script src="../../js/room_category/datepicker.ko.js"></script>
 </head>
 <body>
     <!-- 상단 메뉴바 영역 -->
@@ -68,7 +67,7 @@
             </p>
             <p>
                 <a href="huesthouse.html">
-                    게시트하우스
+                    게스트하우스
                 </a>
             </p>
             <p>
@@ -157,24 +156,24 @@
                             <p>스파시설</p>
                             <ul>
                                 <li>
-                                    <input type="checkbox" id="facility1">
-                                    <label for="facility1">스파/월풀</label>
+                                    <input type="checkbox" id="spa1">
+                                    <label for="spa1">스파/월풀</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="facility3">
-                                    <label for="facility3">노천탕</label>
+                                    <input type="checkbox" id="spa2">
+                                    <label for="spa2">노천탕</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="facility2">
-                                    <label for="facility2">사우나/찜질방</label>
+                                    <input type="checkbox" id="spa3">
+                                    <label for="spa3">사우나/찜질방</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="facility4">
-                                    <label for="facility4">반식욕</label>
+                                    <input type="checkbox" id="spa4">
+                                    <label for="spa4">반식욕</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="facility5">
-                                    <label for="facility5">히노끼탕</label>
+                                    <input type="checkbox" id="spa5">
+                                    <label for="spa5">히노끼탕</label>
                                 </li>
                             </ul>
                         </section>
@@ -246,21 +245,21 @@
 
                 <!-- 우측 숙소 정보 리스트 영역 -->
                 <div class="col-8 right_menu">
-                    <div class="container text-center">
+                    <div class="container text-center sort">
                         <div class="row">
-                            <div class="col">
+                            <div class="col distance_sort">
                                 거리 순
                             </div>
-                            <div class="col">
+                            <div class="col low_sort">
                                 낮은 가격 순
                             </div>
-                            <div class="col">
+                            <div class="col high_sort">
                                 높은 가격 순
                             </div>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="top_recommend">
                         <p>TOP 추천</p>
                         <p>
                             광고
@@ -274,9 +273,195 @@
                                 <div class="room_img">
                                     <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
                                 </div>
-                                <div class="room_title&info">
+                                <div class="room_title_info">
                                     <h2>모텔 숙소명</h2>
-                                    <p><span>9.5</span>최고에요</p>
+                                    <p><span>9.5</span><span>최고에요</span></p>
+                                    <p>2.0km | ○○구 ○○동</p>
+                                    <p>예약취소가능</p>
+                                    <div>
+                                        <p>
+                                            대실
+                                            <span>예약</span>
+                                            <span>25,000원</span>
+                                        </p>
+                                        <p>
+                                            숙박
+                                            <span>예약</span>
+                                            <span>65,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            거리순
+                        </div>
+
+                        <div class="room_infos">
+                            <div>
+                                <div class="room_img">
+                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                </div>
+                                <div class="room_title_info">
+                                    <h2>모텔 숙소명</h2>
+                                    <p><span>9.5</span><span>최고에요</span></p>
+                                    <p>2.0km | ○○구 ○○동</p>
+                                    <p>예약취소가능</p>
+                                    <div>
+                                        <p>
+                                            대실
+                                            <span>예약</span>
+                                            <span>25,000원</span>
+                                        </p>
+                                        <p>
+                                            숙박
+                                            <span>예약</span>
+                                            <span>65,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="room_infos">
+                            <div>
+                                <div class="room_img">
+                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                </div>
+                                <div class="room_title_info">
+                                    <h2>모텔 숙소명</h2>
+                                    <p><span>9.5</span><span>최고에요</span></p>
+                                    <p>2.0km | ○○구 ○○동</p>
+                                    <p>예약취소가능</p>
+                                    <div>
+                                        <p>
+                                            대실
+                                            <span>예약</span>
+                                            <span>25,000원</span>
+                                        </p>
+                                        <p>
+                                            숙박
+                                            <span>예약</span>
+                                            <span>65,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="room_infos">
+                            <div>
+                                <div class="room_img">
+                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                </div>
+                                <div class="room_title_info">
+                                    <h2>모텔 숙소명</h2>
+                                    <p><span>9.5</span><span>최고에요</span></p>
+                                    <p>2.0km | ○○구 ○○동</p>
+                                    <p>예약취소가능</p>
+                                    <div>
+                                        <p>
+                                            대실
+                                            <span>예약</span>
+                                            <span>25,000원</span>
+                                        </p>
+                                        <p>
+                                            숙박
+                                            <span>예약</span>
+                                            <span>65,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="room_infos">
+                            <div>
+                                <div class="room_img">
+                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                </div>
+                                <div class="room_title_info">
+                                    <h2>모텔 숙소명</h2>
+                                    <p><span>9.5</span><span>최고에요</span></p>
+                                    <p>2.0km | ○○구 ○○동</p>
+                                    <p>예약취소가능</p>
+                                    <div>
+                                        <p>
+                                            대실
+                                            <span>예약</span>
+                                            <span>25,000원</span>
+                                        </p>
+                                        <p>
+                                            숙박
+                                            <span>예약</span>
+                                            <span>65,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="room_infos">
+                            <div>
+                                <div class="room_img">
+                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                </div>
+                                <div class="room_title_info">
+                                    <h2>모텔 숙소명</h2>
+                                    <p><span>9.5</span><span>최고에요</span></p>
+                                    <p>2.0km | ○○구 ○○동</p>
+                                    <p>예약취소가능</p>
+                                    <div>
+                                        <p>
+                                            대실
+                                            <span>예약</span>
+                                            <span>25,000원</span>
+                                        </p>
+                                        <p>
+                                            숙박
+                                            <span>예약</span>
+                                            <span>65,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="room_infos">
+                            <div>
+                                <div class="room_img">
+                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                </div>
+                                <div class="room_title_info">
+                                    <h2>모텔 숙소명</h2>
+                                    <p><span>9.5</span><span>최고에요</span></p>
+                                    <p>2.0km | ○○구 ○○동</p>
+                                    <p>예약취소가능</p>
+                                    <div>
+                                        <p>
+                                            대실
+                                            <span>예약</span>
+                                            <span>25,000원</span>
+                                        </p>
+                                        <p>
+                                            숙박
+                                            <span>예약</span>
+                                            <span>65,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="room_infos">
+                            <div>
+                                <div class="room_img">
+                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                </div>
+                                <div class="room_title_info">
+                                    <h2>모텔 숙소명</h2>
+                                    <p><span>9.5</span><span>최고에요</span></p>
                                     <p>2.0km | ○○구 ○○동</p>
                                     <p>예약취소가능</p>
                                     <div>
