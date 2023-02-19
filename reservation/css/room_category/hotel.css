@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* 숙소 카테고리 색상 변경 */
+.room_category_title > p:nth-child(2) {
+    font-weight: bold;
+    color: rgb(242,17,76);
+    padding-left: 0;
+}
+/* // 숙소 카테고리 색상 변경 */
+
+/* 숙소 고정란 */
+.top_more_wrap > div > h2 {
+    letter-spacing: -6px;
+}
+/* // 숙소 고정란 */
+
+/* 리스트 숙소 대표사진 */
+.room_img > img {
+    left: -110%;
+}
+/* // 리스트 숙소 대표사진 */
+
+
+/* 좌측 상세검색 영역 */
+/* 예약 */
+.reseerve {
+    margin-bottom: 30px;
+}
+.reseerve li {
+    margin-bottom: 10px;
+}
+.reseerve li label {
+    margin-left: 5px;
+}
+/* // 예약 */
+
+/* 호텔,리조트 유형 */
+.type {
+    margin-bottom: 30px;
+}
+.type > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.type li {
+    margin-bottom: 10px;
+}
+.type li label {
+    margin-left: 5px;
+}
+/* // 호텔,리조트 유형 */
+
+/* 베트 타입 */
+.bed_type {
+    margin-bottom: 30px;
+}
+.bed_type > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.bed_type > div {
+    display: flex;
+    
+    background-color: orange;
+}
+.bed_type > div > p {
+    width: 61.1825px;
+    text-align: center;
+    overflow: hidden;
+}
+.bed_type > div > p > span:nth-child(1) {
+    background-color: violet;
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    overflow: hidden;
+}
+.bed_type > div > p > span:nth-child(2) {
+    display: inline-block;
+    background-color: wheat;
+    position: relative;
+    top: -5px;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+}
+.bed_type > div > p > span > img {
+    width: 180px;
+}
+
+.bed_type > div > p:nth-child(1) > span:nth-child(1) > img {
+    position: relative;
+    right: 2px;
+    top: 2px;
+}
+.bed_type > div > p:nth-child(2) > span:nth-child(1) > img {
+    position: relative;
+    right: 48px;
+    top: 2px;
+}
+.bed_type > div > p:nth-child(3) > span:nth-child(1) > img {
+    position: relative;
+    right: 92px;
+    top: 2px;
+}
+.bed_type > div > p:nth-child(4) > span:nth-child(1) > img {
+    position: relative;
+    right: 137px;
+    top: 2px;
+}
+
+
+/* // 베트 타입 */
+
+
+
+/* 공용시설 */
+.facility {
+    margin-bottom: 30px;
+}
+.facility > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.facility li {
+    display: inline-block;
+    font-size: 14px;
+    width: 119px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.facility li label {
+    margin-left: 5px;
+}
+/* // 공용시설 */
+
+/* 객실 내 시설 */
+.in_facility {
+    margin-bottom: 30px;
+}
+.in_facility > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.in_facility li {
+    display: inline-block;
+    font-size: 14px;
+    width: 119px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.in_facility li label {
+    margin-left: 5px;
+}
+/* // 객실 내 시설 */
+
+/* 기타 */
+.etc {
+    margin-bottom: 30px;
+}
+.etc > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.etc li {
+    display: inline-block;
+    font-size: 14px;
+    width: 119px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.etc li label {
+    margin-left: 5px;
+}
+/* // 기타 */
+
+
+
+
+/* // 좌측 상세검색 영역 */

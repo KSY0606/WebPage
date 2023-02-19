@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+.room_category_title > p:nth-child(1) {
+    font-weight: bold;
+    color: rgb(242,17,76);
+    padding-left: 0;
+}
+
+/* 좌측 상세검색 영역 */
+/* 예약 */
+.reseerve {
+    margin-bottom: 30px;
+}
+.reseerve li {
+    margin-bottom: 10px;
+}
+.reseerve li label {
+    margin-left: 5px;
+}
+/* // 예약 */
+
+/* 이색테마 */
+.tema {
+    margin-bottom: 30px;
+}
+.tema > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.tema li {
+    display: inline-block;
+    font-size: 14px;
+    width: 119px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.tema li label {
+    margin-left: 5px;
+}
+/* // 이색 테마 */
+
+/* 스파 시설 */
+.spa {
+    margin-bottom: 30px;
+}
+.spa > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.spa li {
+    display: inline-block;
+    font-size: 14px;
+    width: 119px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.spa li label {
+    margin-left: 5px;
+}
+/* // 스파 시설 */
+
+/* 놀이시설 */
+.play {
+    margin-bottom: 30px;
+}
+.play > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.play li {
+    display: inline-block;
+    font-size: 14px;
+    width: 119px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.play li label {
+    margin-left: 5px;
+}
+/* // 놀이시설 */
+
+/* 혜택 */
+.benefits {
+    margin-bottom: 30px;
+}
+.benefits > p {
+    color: rgba(0,0,0,0.56);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.benefits button {
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    border: 1px solid rgba(0,0,0,0.27);
+    border-radius: 32px;
+    color: rgba(0,0,0,0.56);
+    background-color: white;
+    padding: 4px 7px;
+}
+/* // 혜택 */
+
+/* 가격 */
+.value {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: rgba(0,0,0,0.56);
+}
+.value > label > span {
+    color: #f7323f;
+    font-weight: normal;
+    font-size: 12px;
+}
+.change_num {
+    margin-left: 7px;
+}
+.value > p {
+    clear: both;
+}
+.value > p > span {
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(0,0,0,0.56);
+}
+.value > p > span:nth-child(1) {
+    display: inline-block;
+}
+.value > p > span:nth-child(2) {
+    display: inline-block;
+}
+/* // 가격 */
