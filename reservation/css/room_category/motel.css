@@ -129,9 +129,9 @@
     color: rgba(0,0,0,0.56);
 }
 .value > p > span:nth-child(1) {
-    display: inline-block;
+    float: left;
 }
 .value > p > span:nth-child(2) {
-    display: inline-block;
+    float: right;
 }
 /* // 가격 */

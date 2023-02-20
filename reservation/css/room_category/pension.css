@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 숙소 카테고리 색상 변경 */
-.room_category_title > p:nth-child(2) {
+.room_category_title > p:nth-child(3) {
     font-weight: bold;
     color: rgb(242,17,76);
     padding-left: 0;
@@ -16,7 +16,11 @@
 
 /* 리스트 숙소 대표사진 */
 .room_img > img {
-    left: -110%;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 /* // 리스트 숙소 대표사진 */
 
@@ -34,7 +38,8 @@
 }
 /* // 예약 */
 
-/* 호텔,리조트 유형 */
+
+/* 펜션 유형 */
 .type {
     margin-bottom: 30px;
 }
@@ -49,66 +54,41 @@
 .type li label {
     margin-left: 5px;
 }
-/* // 호텔,리조트 유형 */
+/* // 펜션 유형 */
 
-/* 베드 타입 */
-.bed_type {
+
+/* 가격 */
+.value {
     margin-bottom: 30px;
 }
-.bed_type > p {
-    color: rgba(0,0,0,0.56);
+
+.form-label {
     font-weight: bold;
-    margin-bottom: 15px;
+    color: rgba(0,0,0,0.56);
 }
-.bed_type > div {
-    display: flex;
+.value > label > span {
+    color: #f7323f;
+    font-weight: normal;
+    font-size: 12px;
 }
-.bed_type > div > p {
-    width: 61.1825px;
-    text-align: center;
-    overflow: hidden;
-    cursor: pointer;
+.change_num {
+    margin-left: 7px;
 }
-.bed_type > div > p > span:nth-child(1) {
-    display: inline-block;
-    width: 40px;
-    height: 26px;
-    overflow: hidden;
+.value > p {
+    clear: both;
 }
-.bed_type > div > p > span:nth-child(2) {
-    display: inline-block;
-    position: relative;
-    top: -5px;
-    color: rgba(0,0,0,0.87);
-    font-size: 13px;
+.value > p > span {
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(0,0,0,0.56);
 }
-.bed_type > div > p > span > img {
-    width: 180px;
+.value > p > span:nth-child(1) {
+    float: left;
 }
-
-.bed_type > div > p:nth-child(1) > span:nth-child(1) > img {
-    position: relative;
-    right: 2px;
-    top: 2px;
+.value > p > span:nth-child(2) {
+    float: right;
 }
-.bed_type > div > p:nth-child(2) > span:nth-child(1) > img {
-    position: relative;
-    right: 48px;
-    top: 2px;
-}
-.bed_type > div > p:nth-child(3) > span:nth-child(1) > img {
-    position: relative;
-    right: 92px;
-    top: 2px;
-}
-.bed_type > div > p:nth-child(4) > span:nth-child(1) > img {
-    position: relative;
-    right: 137px;
-    top: 2px;
-}
-/* // 베드 타입 */
-
-
+/* // 가격 */
 
 /* 공용시설 */
 .facility {
@@ -172,8 +152,4 @@
     margin-left: 5px;
 }
 /* // 기타 */
-
-
-
-
 /* // 좌측 상세검색 영역 */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>모텔 리스트 페이지</title>
+    <title>게스트하우스 리스트 페이지</title>
     <!-- 부트스트랩 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- 부트스트랩 icon -->
@@ -21,14 +21,17 @@
     <script src="../../js/common/header&footer.js"></script>
     <script src="../../js/common/header_scroll.js"></script>
 
-    <!-- 모텔 리스트 페이지 css -->
+    <!-- 게스트하우스 리스트 페이지 css -->
     <link rel="stylesheet" type="text/css" href="../../css/room_category/room_category_common.css">
-    <link rel="stylesheet" type="text/css" href="../../css/room_category/motel.css">
+    <link rel="stylesheet" type="text/css" href="../../css/room_category/guesthouse.css">
 
     <!-- 달력 -->
     <link rel="stylesheet" href="../../css/room_category/datepicker.min.css">
     <script src="../../js/room_category/datepicker.min.js"></script>
     <script src="../../js/room_category/datepicker.ko.js"></script>
+    
+    <!-- 베드 타입 클릭 js -->
+    <script src="../../js/room_category/bed_type.js"></script>
 </head>
 <body>
     <!-- 상단 메뉴바 영역 -->
@@ -39,7 +42,7 @@
     <div class="top_more_wrap">
         <div>
             <h2>
-                모텔
+                게스트하우스
             </h2>
             <p>강북구 우이동 <span>내 위치 재설정</span></p>
         </div>
@@ -101,124 +104,151 @@
                             <ul>
                                 <li>
                                     <input type="checkbox" id="reserve1">
-                                    <label for="reserve1">대실 예약</label>
+                                    <label for="reserve1">예약 가능</label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="reserve2">
-                                    <label for="reserve2">숙박 예약</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="reserve3">
-                                    <label for="reserve3">50%할인</label>
+                                    <label for="reserve2">프로모션</label>
                                 </li>
                             </ul>
-                        </section>
-
-                        <section class="tema">
-                            <p>이색테마</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="tema1">
-                                    <label for="tema1">무인텔</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="tema2">
-                                    <label for="tema2">파티룸</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="tema3">
-                                    <label for="tema3">복층룸</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="tema4">
-                                    <label for="tema4">트윈베드</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="tema5">
-                                    <label for="tema5">바다뷰</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="tema6">
-                                    <label for="tema6">야외테라스</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="tema7">
-                                    <label for="tema7">호수뷰</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="tema8">
-                                    <label for="tema8">하늘뷰</label>
-                                </li>
-                            </ul>
-                        </section>
-
-                        <section class="spa">
-                            <p>스파시설</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="spa1">
-                                    <label for="spa1">스파/월풀</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="spa2">
-                                    <label for="spa2">노천탕</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="spa3">
-                                    <label for="spa3">사우나/찜질방</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="spa4">
-                                    <label for="spa4">반식욕</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="spa5">
-                                    <label for="spa5">히노끼탕</label>
-                                </li>
-                            </ul>
-                        </section>
-
-                        <section class="play">
-                            <p>놀이시설</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="play1">
-                                    <label for="play1">수영장</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="play2">
-                                    <label for="play2">노래방</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="play3">
-                                    <label for="play3">당구대</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="play4">
-                                    <label for="play4">게임기</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="play5">
-                                    <label for="play5">안마의자</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="play6">
-                                    <label for="play6">PC</label>
-                                </li>
-                            </ul>
-                        </section>
-                        
-                        <section class="benefits">
-                            <p>혜택</p>
-                            <button>+ 예약취소가능</button>
-                            <button>+ 예약특가</button>
-                            <button>+ 좋은숙박 TOP100</button>
                         </section>
 
                         <section class="value"> 
                             <label for="customRange3" class="form-label">가격 <span id="slider_value_view" class="change_num">1</span><span>만원 이상</span></label>
                             <input type="range" class="form-range slider_range" value="0" min="1" max="30" step="1" id="customRange3">
                             <p><span>1만원</span><span>30만원</span></p>
+                        </section>
+
+                        <section class="bed_type">
+                            <p>베드 타입</p>
+                            <div>
+                                <p onclick="single_bed_click()">
+                                    <span>
+                                        <img src="../../images/room_category/bed_type.png" alt="베드 타입">
+                                    </span>
+                                    <span>
+                                        싱글
+                                    </span>
+                                </p>
+                                <p onclick="double_bed_click()">
+                                    <span>
+                                        <img src="../../images/room_category/bed_type.png" alt="베드 타입">
+                                    </span>
+                                    <span>
+                                        더블
+                                    </span>
+                                </p>
+                                <p onclick="twin_bed_click()">
+                                    <span>
+                                        <img src="../../images/room_category/bed_type.png" alt="베드 타입">
+                                    </span>
+                                    <span>
+                                        트윈
+                                    </span>
+                                </p>
+                                <p onclick="ondor_bed_click()">
+                                    <span>
+                                        <img src="../../images/room_category/bed_type.png" alt="베드 타입">
+                                    </span>
+                                    <span>
+                                        온돌
+                                    </span>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="facility">
+                            <p>공용시설</p>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="facility1">
+                                    <label for="facility1">세탁기</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility2">
+                                    <label for="facility2">라운지</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility3">
+                                    <label for="facility4">건조기</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility4">
+                                    <label for="facility4">주방/식당</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility5">
+                                    <label for="facility6">탈수기</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility7">
+                                    <label for="facility7">주차장</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility8">
+                                    <label for="facility8">취사가능</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility9">
+                                    <label for="facility9">카페</label>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="in_facility">
+                            <p>객실 내 시설</p>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="in_facility1">
+                                    <label for="in_facility1">와이파이</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="in_facility2">
+                                    <label for="in_facility2">욕실용품</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="in_facility3">
+                                    <label for="in_facility3">냉장고</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="in_facility4">
+                                    <label for="in_facility4">욕조</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="in_facility5">
+                                    <label for="in_facility5">드라이기</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="in_facility6">
+                                    <label for="in_facility6">에어컨</label>
+                                </li>
+                            </ul>
+                        </section>
+                        
+                        <section class="etc">
+                            <p>기타</p>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="etc1">
+                                    <label for="etc1">픽업가능</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="etc2">
+                                    <label for="etc2">조식포함</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="etc3">
+                                    <label for="etc3">금연</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="etc4">
+                                    <label for="etc4">객실내취사</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="etc5">
+                                    <label for="etc5">무료주차</label>
+                                </li>
+                            </ul>
                         </section>
 
                         <section class="range">
@@ -271,23 +301,17 @@
                         <div class="room_infos">
                             <div>
                                 <div class="room_img">
-                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                    <img src="../../images/room_category/guesthouse_img01.jpg" alt="guesthouse 대표사진">
                                 </div>
                                 <div class="room_title_info">
-                                    <h2>모텔 숙소명</h2>
+                                    <h2>게스트하우스 숙소명</h2>
                                     <p><span>9.5</span><span>최고에요</span></p>
-                                    <p>2.0km | ○○구 ○○동</p>
-                                    <p>예약취소가능</p>
+                                    <p>1.7km | ○○구 ○○동</p>
                                     <div>
-                                        <p>
-                                            대실
-                                            <span>예약</span>
-                                            <span>25,000원</span>
-                                        </p>
                                         <p>
                                             숙박
                                             <span>예약</span>
-                                            <span>65,000원</span>
+                                            <span>120,000원</span>
                                         </p>
                                     </div>
                                 </div>
@@ -301,23 +325,17 @@
                         <div class="room_infos">
                             <div>
                                 <div class="room_img">
-                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                    <img src="../../images/room_category/guesthouse_img01.jpg" alt="guesthouse 대표사진">
                                 </div>
                                 <div class="room_title_info">
-                                    <h2>모텔 숙소명</h2>
+                                    <h2>게스트하우스 숙소명</h2>
                                     <p><span>9.5</span><span>최고에요</span></p>
-                                    <p>2.0km | ○○구 ○○동</p>
-                                    <p>예약취소가능</p>
+                                    <p>1.7km | ○○구 ○○동</p>
                                     <div>
-                                        <p>
-                                            대실
-                                            <span>예약</span>
-                                            <span>25,000원</span>
-                                        </p>
                                         <p>
                                             숙박
                                             <span>예약</span>
-                                            <span>65,000원</span>
+                                            <span>120,000원</span>
                                         </p>
                                     </div>
                                 </div>
@@ -327,23 +345,17 @@
                         <div class="room_infos">
                             <div>
                                 <div class="room_img">
-                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                    <img src="../../images/room_category/guesthouse_img01.jpg" alt="guesthouse 대표사진">
                                 </div>
                                 <div class="room_title_info">
-                                    <h2>모텔 숙소명</h2>
+                                    <h2>게스트하우스 숙소명</h2>
                                     <p><span>9.5</span><span>최고에요</span></p>
-                                    <p>2.0km | ○○구 ○○동</p>
-                                    <p>예약취소가능</p>
+                                    <p>1.7km | ○○구 ○○동</p>
                                     <div>
-                                        <p>
-                                            대실
-                                            <span>예약</span>
-                                            <span>25,000원</span>
-                                        </p>
                                         <p>
                                             숙박
                                             <span>예약</span>
-                                            <span>65,000원</span>
+                                            <span>120,000원</span>
                                         </p>
                                     </div>
                                 </div>
@@ -353,23 +365,17 @@
                         <div class="room_infos">
                             <div>
                                 <div class="room_img">
-                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                    <img src="../../images/room_category/guesthouse_img01.jpg" alt="guesthouse 대표사진">
                                 </div>
                                 <div class="room_title_info">
-                                    <h2>모텔 숙소명</h2>
+                                    <h2>게스트하우스 숙소명</h2>
                                     <p><span>9.5</span><span>최고에요</span></p>
-                                    <p>2.0km | ○○구 ○○동</p>
-                                    <p>예약취소가능</p>
+                                    <p>1.7km | ○○구 ○○동</p>
                                     <div>
-                                        <p>
-                                            대실
-                                            <span>예약</span>
-                                            <span>25,000원</span>
-                                        </p>
                                         <p>
                                             숙박
                                             <span>예약</span>
-                                            <span>65,000원</span>
+                                            <span>120,000원</span>
                                         </p>
                                     </div>
                                 </div>
@@ -379,23 +385,17 @@
                         <div class="room_infos">
                             <div>
                                 <div class="room_img">
-                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                    <img src="../../images/room_category/guesthouse_img01.jpg" alt="guesthouse 대표사진">
                                 </div>
                                 <div class="room_title_info">
-                                    <h2>모텔 숙소명</h2>
+                                    <h2>게스트하우스 숙소명</h2>
                                     <p><span>9.5</span><span>최고에요</span></p>
-                                    <p>2.0km | ○○구 ○○동</p>
-                                    <p>예약취소가능</p>
+                                    <p>1.7km | ○○구 ○○동</p>
                                     <div>
-                                        <p>
-                                            대실
-                                            <span>예약</span>
-                                            <span>25,000원</span>
-                                        </p>
                                         <p>
                                             숙박
                                             <span>예약</span>
-                                            <span>65,000원</span>
+                                            <span>120,000원</span>
                                         </p>
                                     </div>
                                 </div>
@@ -405,23 +405,17 @@
                         <div class="room_infos">
                             <div>
                                 <div class="room_img">
-                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                    <img src="../../images/room_category/guesthouse_img01.jpg" alt="guesthouse 대표사진">
                                 </div>
                                 <div class="room_title_info">
-                                    <h2>모텔 숙소명</h2>
+                                    <h2>게스트하우스 숙소명</h2>
                                     <p><span>9.5</span><span>최고에요</span></p>
-                                    <p>2.0km | ○○구 ○○동</p>
-                                    <p>예약취소가능</p>
+                                    <p>1.7km | ○○구 ○○동</p>
                                     <div>
-                                        <p>
-                                            대실
-                                            <span>예약</span>
-                                            <span>25,000원</span>
-                                        </p>
                                         <p>
                                             숙박
                                             <span>예약</span>
-                                            <span>65,000원</span>
+                                            <span>120,000원</span>
                                         </p>
                                     </div>
                                 </div>
@@ -431,23 +425,17 @@
                         <div class="room_infos">
                             <div>
                                 <div class="room_img">
-                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                    <img src="../../images/room_category/guesthouse_img01.jpg" alt="guesthouse 대표사진">
                                 </div>
                                 <div class="room_title_info">
-                                    <h2>모텔 숙소명</h2>
+                                    <h2>게스트하우스 숙소명</h2>
                                     <p><span>9.5</span><span>최고에요</span></p>
-                                    <p>2.0km | ○○구 ○○동</p>
-                                    <p>예약취소가능</p>
+                                    <p>1.7km | ○○구 ○○동</p>
                                     <div>
-                                        <p>
-                                            대실
-                                            <span>예약</span>
-                                            <span>25,000원</span>
-                                        </p>
                                         <p>
                                             숙박
                                             <span>예약</span>
-                                            <span>65,000원</span>
+                                            <span>120,000원</span>
                                         </p>
                                     </div>
                                 </div>
@@ -457,23 +445,17 @@
                         <div class="room_infos">
                             <div>
                                 <div class="room_img">
-                                    <img src="../../images/room_category/motel_img01.jpg" alt="motel 대표사진">
+                                    <img src="../../images/room_category/guesthouse_img01.jpg" alt="guesthouse 대표사진">
                                 </div>
                                 <div class="room_title_info">
-                                    <h2>모텔 숙소명</h2>
+                                    <h2>게스트하우스 숙소명</h2>
                                     <p><span>9.5</span><span>최고에요</span></p>
-                                    <p>2.0km | ○○구 ○○동</p>
-                                    <p>예약취소가능</p>
+                                    <p>1.7km | ○○구 ○○동</p>
                                     <div>
-                                        <p>
-                                            대실
-                                            <span>예약</span>
-                                            <span>25,000원</span>
-                                        </p>
                                         <p>
                                             숙박
                                             <span>예약</span>
-                                            <span>65,000원</span>
+                                            <span>120,000원</span>
                                         </p>
                                     </div>
                                 </div>
@@ -509,7 +491,7 @@
         };
         
         RangeSlider();
-        </script>
-        <script src="../../js/room_category/datepicker.js"></script>
+    </script>
+    <script src="../../js/room_category/datepicker.js"></script>
 </body>
 </html>
